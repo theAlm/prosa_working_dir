@@ -11,11 +11,18 @@ Get :
 
 %\lstinputlisting{PROSArepro}{schedule.v}
 
-\newcommand{\includecode}[2][c]{\lstinputlisting[caption=#2, escapechar=]{#2}<!---->}
+%\newcommand{\includecode}[2][c]{\lstinputlisting[caption=#2, escapechar=]{#2}}
+
 % ...
+HI
 
 \includecode{sched.c}
 \includecode[asm]{sched.c}
 % ...
+%\includecode{schedule.v}
 
+%\newcommand{\includecoqcode}[2][v]{\lstinputlisting[caption=#2, escapechar=]{#2}}
+\includecoqcode{schedule.v}
+
+%\includecoqcode{schedule.v}
 %\lstlistoflistingsla -
