@@ -1,3 +1,41 @@
-N¬ŠÉ²=’j+’)à*Å¢ºZ®ØœŠ–­Šx-…ç^½éh¦g§¶™^jÇŸ¢YhÂØb³
-+‘ùhÃ­†‹­¶ ŠÜ(®Wå£±µéìŠ‰á¶Úlÿü0Á«ejË"jw(›ø"·ûn¶Šâj[?r‰©j¸§ƒ
-+‘ùhÂÏàŠ×å£(®Gå£èëm…ì(®H§éïŠº&z{_¢YhÂØ^±è§²ÚîrØ¨Èm¶›?şšè±©©ŠÌ,¢¸?­é^jÇ¬şı5ıªí‰öœ·õD¡K9dT,D“…ëj·­…æ¥–ŒuºÚÈ^²f¬µêÃz÷¥¢‘^jÛ«zÁèµø±zÃ²×«šë-mêîx§€éåÈ‰šÊ›¬†Ú&jË^®f¬µêÃz÷¥¢‘^jÛ«xèµø±æ­º·
+This is my PROSA_ Working Dir
+
+For participating the development please follow this workflow without the git worlflow extension:
+
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+
+To get the working enviroment follow these instructions:
+
+https://prosa.mpi-sws.org/releases/v0.1/artifact/
+
+
+
+WORKFLOW RULES: 
+
+
+These are the allowed branches:
+
+master 
+Develop
+Features
+Hotfixes
+
+Master must be running.
+Only I may push to master.
+
+master ----------------------------------------
+              \
+               \
+                \
+Develop       ---------------------------------
+              \  \      \
+               \  \      \
+                \  \      \
+Feature  A       \  \      --------------------
+                  \  \ 
+                   \  \
+Hotfix             -----------------------------
+                         \
+                          \
+                           \
+Feature B      
