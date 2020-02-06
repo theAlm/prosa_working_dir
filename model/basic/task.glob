@@ -1,0 +1,124 @@
+DIGEST 6435f93908910a412c275667368799a8
+Frt.model.basic.task
+R15:33 rt.model.basic.time <> <> lib
+R35:45 rt.util.all <> <> lib
+R77:82 mathcomp.ssreflect.ssrnat <> <> lib
+R84:90 mathcomp.ssreflect.ssrbool <> <> lib
+R92:97 mathcomp.ssreflect.eqtype <> <> lib
+R99:105 mathcomp.ssreflect.fintype <> <> lib
+R107:109 mathcomp.ssreflect.seq <> <> lib
+mod 163:174 <> SporadicTask
+sec 204:212 SporadicTask BasicTask
+R234:239 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 256:264 SporadicTask.BasicTask task_cost
+R271:274 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R275:278 rt.model.basic.time Time time def
+R267:270 rt.model.basic.task <> SporadicTask.BasicTask.Task var
+var 294:304 SporadicTask.BasicTask task_period
+R311:314 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R315:318 rt.model.basic.time Time time def
+R307:310 rt.model.basic.task <> SporadicTask.BasicTask.Task var
+var 334:346 SporadicTask.BasicTask task_deadline
+R353:356 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R357:360 rt.model.basic.time Time time def
+R349:352 rt.model.basic.task <> SporadicTask.BasicTask.Task var
+sec 376:390 SporadicTask.BasicTask ValidParameters
+var 408:410 SporadicTask.BasicTask.ValidParameters tsk
+R413:416 rt.model.basic.task <> SporadicTask.BasicTask.Task var
+def 509:526 SporadicTask task_cost_positive
+R544:546 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>'_x not
+R531:539 rt.model.basic.task <> SporadicTask.BasicTask.task_cost var
+R541:543 rt.model.basic.task <> SporadicTask.BasicTask.ValidParameters.tsk var
+def 567:586 SporadicTask task_period_positive
+R606:608 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>'_x not
+R591:601 rt.model.basic.task <> SporadicTask.BasicTask.task_period var
+R603:605 rt.model.basic.task <> SporadicTask.BasicTask.ValidParameters.tsk var
+def 629:650 SporadicTask task_deadline_positive
+R672:674 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>'_x not
+R655:667 rt.model.basic.task <> SporadicTask.BasicTask.task_deadline var
+R669:671 rt.model.basic.task <> SporadicTask.BasicTask.ValidParameters.tsk var
+def 772:792 SporadicTask task_cost_le_deadline
+R810:813 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R797:805 rt.model.basic.task <> SporadicTask.BasicTask.task_cost var
+R807:809 rt.model.basic.task <> SporadicTask.BasicTask.ValidParameters.tsk var
+R814:826 rt.model.basic.task <> SporadicTask.BasicTask.task_deadline var
+R828:830 rt.model.basic.task <> SporadicTask.BasicTask.ValidParameters.tsk var
+def 850:868 SporadicTask task_cost_le_period
+R886:889 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R873:881 rt.model.basic.task <> SporadicTask.BasicTask.task_cost var
+R883:885 rt.model.basic.task <> SporadicTask.BasicTask.ValidParameters.tsk var
+R890:900 rt.model.basic.task <> SporadicTask.BasicTask.task_period var
+R902:904 rt.model.basic.task <> SporadicTask.BasicTask.ValidParameters.tsk var
+def 925:946 SporadicTask is_valid_sporadic_task
+R977:980 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R959:976 rt.model.basic.task SporadicTask task_cost_positive def
+R1001:1004 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R981:1000 rt.model.basic.task SporadicTask task_period_positive def
+R1027:1038 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R1005:1026 rt.model.basic.task SporadicTask task_deadline_positive def
+R1060:1063 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R1039:1059 rt.model.basic.task SporadicTask task_cost_le_deadline def
+R1064:1082 rt.model.basic.task SporadicTask task_cost_le_period def
+R1094:1108 rt.model.basic.task SporadicTask.BasicTask.ValidParameters <> sec
+R1122:1130 rt.model.basic.task SporadicTask.BasicTask <> sec
+R1138:1149 rt.model.basic.task SporadicTask <> mod
+mod 1207:1221 <> SporadicTaskset
+sec 1273:1283 SporadicTaskset TasksetDefs
+def 1352:1361 SporadicTaskset taskset_of
+R1370:1375 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R1381:1383 mathcomp.ssreflect.seq <> seq syndef
+R1385:1388 rt.model.basic.task <> Task var
+sec 1461:1477 SporadicTaskset.TasksetDefs TasksetProperties
+R1502:1507 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 1526:1534 SporadicTaskset.TasksetDefs.TasksetProperties task_cost
+R1541:1544 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1545:1548 rt.model.basic.time Time time def
+R1537:1540 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.Task var
+var 1566:1576 SporadicTaskset.TasksetDefs.TasksetProperties task_period
+R1583:1586 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1587:1590 rt.model.basic.time Time time def
+R1579:1582 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.Task var
+var 1608:1620 SporadicTaskset.TasksetDefs.TasksetProperties task_deadline
+R1627:1630 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1631:1634 rt.model.basic.time Time time def
+R1623:1626 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.Task var
+var 1648:1660 SporadicTaskset.TasksetDefs.TasksetProperties is_valid_task
+R1673:1694 rt.model.basic.task SporadicTask is_valid_sporadic_task def
+R1718:1730 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.task_deadline var
+R1706:1716 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.task_period var
+R1696:1704 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.task_cost var
+var 1749:1750 SporadicTaskset.TasksetDefs.TasksetProperties ts
+R1753:1762 rt.model.basic.task SporadicTaskset taskset_of def
+R1764:1767 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.Task var
+def 1852:1873 SporadicTaskset valid_sporadic_taskset
+R1918:1921 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1922:1934 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.is_valid_task var
+R1936:1938 rt.model.basic.task <> tsk var
+R1911:1915 mathcomp.ssreflect.ssrbool <> :bool_scope:x_'\in'_x not
+R1908:1910 rt.model.basic.task <> tsk var
+R1916:1917 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.ts var
+def 2070:2092 SporadicTaskset implicit_deadline_model
+R2137:2140 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2158:2160 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2141:2153 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.task_deadline var
+R2155:2157 rt.model.basic.task <> tsk var
+R2161:2171 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.task_period var
+R2173:2175 rt.model.basic.task <> tsk var
+R2130:2134 mathcomp.ssreflect.ssrbool <> :bool_scope:x_'\in'_x not
+R2127:2129 rt.model.basic.task <> tsk var
+R2135:2136 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.ts var
+def 2196:2221 SporadicTaskset constrained_deadline_model
+R2266:2269 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2287:2290 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R2270:2282 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.task_deadline var
+R2284:2286 rt.model.basic.task <> tsk var
+R2291:2301 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.task_period var
+R2303:2305 rt.model.basic.task <> tsk var
+R2259:2263 mathcomp.ssreflect.ssrbool <> :bool_scope:x_'\in'_x not
+R2256:2258 rt.model.basic.task <> tsk var
+R2264:2265 rt.model.basic.task <> SporadicTaskset.TasksetDefs.TasksetProperties.ts var
+def 2326:2349 SporadicTaskset arbitrary_deadline_model
+R2354:2357 Coq.Init.Logic <> True ind
+R2369:2385 rt.model.basic.task SporadicTaskset.TasksetDefs.TasksetProperties <> sec
+R2395:2405 rt.model.basic.task SporadicTaskset.TasksetDefs <> sec
+R2413:2427 rt.model.basic.task SporadicTaskset <> mod

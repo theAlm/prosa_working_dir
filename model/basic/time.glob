@@ -1,0 +1,6 @@
+DIGEST 04020af22003c17567a0375946f2327e
+Frt.model.basic.time
+mod 7:10 <> Time
+def 72:75 Time time
+R80:82 Coq.Init.Datatypes <> nat ind
+R90:93 rt.model.basic.time Time <> mod

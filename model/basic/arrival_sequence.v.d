@@ -1,0 +1,2 @@
+model/basic/arrival_sequence.vo model/basic/arrival_sequence.glob model/basic/arrival_sequence.v.beautified: model/basic/arrival_sequence.v util/all.vo model/basic/job.vo model/basic/task.vo model/basic/time.vo model/basic/jobin_eqdec.v
+model/basic/arrival_sequence.vio: model/basic/arrival_sequence.v util/all.vio model/basic/job.vio model/basic/task.vio model/basic/time.vio model/basic/jobin_eqdec.v

@@ -1,0 +1,477 @@
+DIGEST 8b236b9ce7c011bcb654c49f22443ce7
+Frt.model.jitter.schedule
+R15:25 rt.util.all <> <> lib
+R43:61 rt.model.jitter.job <> <> lib
+R63:82 rt.model.jitter.task <> <> lib
+R84:115 rt.model.jitter.arrival_sequence <> <> lib
+R147:155 mathcomp.ssreflect.ssreflect <> <> lib
+R157:163 mathcomp.ssreflect.ssrbool <> <> lib
+R165:170 mathcomp.ssreflect.eqtype <> <> lib
+R172:177 mathcomp.ssreflect.ssrnat <> <> lib
+R179:181 mathcomp.ssreflect.seq <> <> lib
+R183:189 mathcomp.ssreflect.fintype <> <> lib
+R191:195 mathcomp.ssreflect.bigop <> <> lib
+mod 263:280 <> ScheduleWithJitter
+R383:405 rt.model.basic.schedule <> <> lib
+sec 541:566 ScheduleWithJitter ArrivalDependentProperties
+R588:593 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 610:617 ScheduleWithJitter.ArrivalDependentProperties job_cost
+R623:626 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R627:630 rt.model.basic.time Time time def
+R620:622 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.Job var
+var 646:655 ScheduleWithJitter.ArrivalDependentProperties job_jitter
+R661:664 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R665:668 rt.model.basic.time Time time def
+R658:660 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.Job var
+R735:750 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R752:754 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.Job var
+R860:862 Coq.Init.Datatypes <> nat ind
+var 879:883 ScheduleWithJitter.ArrivalDependentProperties sched
+R886:893 rt.model.basic.schedule Schedule schedule def
+R904:910 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.arr_seq var
+R895:902 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.num_cpus var
+sec 926:938 ScheduleWithJitter.ArrivalDependentProperties JobProperties
+var 957:957 ScheduleWithJitter.ArrivalDependentProperties.JobProperties j
+R960:964 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R966:972 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.arr_seq var
+def 1058:1071 ScheduleWithJitter actual_arrival
+R1089:1091 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R1076:1086 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R1088:1088 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.JobProperties.j var
+R1092:1101 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.job_jitter var
+R1103:1103 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.JobProperties.j var
+def 1181:1197 ScheduleWithJitter jitter_has_passed
+R1203:1206 rt.model.basic.time Time time def
+R1226:1229 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R1212:1225 rt.model.jitter.schedule ScheduleWithJitter actual_arrival def
+R1230:1230 rt.model.jitter.schedule <> t var
+def 1309:1329 ScheduleWithJitter actual_arrival_before
+R1335:1338 rt.model.basic.time Time time def
+R1358:1360 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<'_x not
+R1344:1357 rt.model.jitter.schedule ScheduleWithJitter actual_arrival def
+R1361:1361 rt.model.jitter.schedule <> t var
+def 1472:1478 ScheduleWithJitter pending
+R1484:1487 rt.model.basic.time Time time def
+R1512:1515 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R1493:1509 rt.model.jitter.schedule ScheduleWithJitter jitter_has_passed def
+R1511:1511 rt.model.jitter.schedule <> t var
+R1516:1518 mathcomp.ssreflect.ssrbool <> :bool_scope:'~~'_x not
+R1519:1527 rt.model.basic.schedule Schedule completed def
+R1546:1546 rt.model.jitter.schedule <> t var
+R1544:1544 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.JobProperties.j var
+R1538:1542 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.sched var
+R1529:1536 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.job_cost var
+def 1646:1655 ScheduleWithJitter backlogged
+R1661:1664 rt.model.basic.time Time time def
+R1679:1682 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R1670:1676 rt.model.jitter.schedule ScheduleWithJitter pending def
+R1678:1678 rt.model.jitter.schedule <> t var
+R1683:1685 mathcomp.ssreflect.ssrbool <> :bool_scope:'~~'_x not
+R1686:1694 rt.model.basic.schedule Schedule scheduled def
+R1704:1704 rt.model.jitter.schedule <> t var
+R1702:1702 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.JobProperties.j var
+R1696:1700 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.sched var
+def 1841:1850 ScheduleWithJitter carried_in
+R1857:1860 rt.model.basic.time Time time def
+R1890:1893 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R1866:1886 rt.model.jitter.schedule ScheduleWithJitter actual_arrival_before def
+R1888:1889 rt.model.jitter.schedule <> t1 var
+R1894:1896 mathcomp.ssreflect.ssrbool <> :bool_scope:'~~'_x not
+R1897:1905 rt.model.basic.schedule Schedule completed def
+R1924:1925 rt.model.jitter.schedule <> t1 var
+R1922:1922 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.JobProperties.j var
+R1916:1920 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.sched var
+R1907:1914 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.job_cost var
+def 2062:2072 ScheduleWithJitter carried_out
+R2082:2085 rt.model.basic.time Time time def
+R2115:2118 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R2091:2111 rt.model.jitter.schedule ScheduleWithJitter actual_arrival_before def
+R2113:2114 rt.model.jitter.schedule <> t2 var
+R2119:2121 mathcomp.ssreflect.ssrbool <> :bool_scope:'~~'_x not
+R2122:2130 rt.model.basic.schedule Schedule completed def
+R2149:2150 rt.model.jitter.schedule <> t2 var
+R2147:2147 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.JobProperties.j var
+R2141:2145 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.sched var
+R2132:2139 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.job_cost var
+R2162:2174 rt.model.jitter.schedule ScheduleWithJitter.ArrivalDependentProperties.JobProperties <> sec
+sec 2190:2207 ScheduleWithJitter.ArrivalDependentProperties ScheduleProperties
+def 2297:2321 ScheduleWithJitter jobs_execute_after_jitter
+R2375:2378 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2379:2395 rt.model.jitter.schedule ScheduleWithJitter jitter_has_passed def
+R2399:2399 rt.model.jitter.schedule <> t var
+R2397:2397 rt.model.jitter.schedule <> j var
+R2356:2364 rt.model.basic.schedule Schedule scheduled def
+R2374:2374 rt.model.jitter.schedule <> t var
+R2372:2372 rt.model.jitter.schedule <> j var
+R2366:2370 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.sched var
+R2411:2428 rt.model.jitter.schedule ScheduleWithJitter.ArrivalDependentProperties.ScheduleProperties <> sec
+sec 2448:2458 ScheduleWithJitter.ArrivalDependentProperties BasicLemmas
+var 2543:2569 ScheduleWithJitter.ArrivalDependentProperties.BasicLemmas H_jobs_execute_after_jitter
+R2580:2604 rt.model.jitter.schedule ScheduleWithJitter jobs_execute_after_jitter def
+sec 2622:2628 ScheduleWithJitter.ArrivalDependentProperties.BasicLemmas Pending
+var 2714:2729 ScheduleWithJitter.ArrivalDependentProperties.BasicLemmas.Pending H_completed_jobs
+R2742:2768 rt.model.basic.schedule Schedule completed_jobs_dont_execute def
+R2779:2783 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.sched var
+R2770:2777 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.job_cost var
+prf 2864:2888 ScheduleWithJitter scheduled_implies_pending
+R2944:2959 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2960:2966 rt.model.jitter.schedule ScheduleWithJitter pending def
+R2970:2970 rt.model.jitter.schedule <> t var
+R2968:2968 rt.model.jitter.schedule <> j var
+R2925:2933 rt.model.basic.schedule Schedule scheduled def
+R2943:2943 rt.model.jitter.schedule <> t var
+R2941:2941 rt.model.jitter.schedule <> j var
+R2935:2939 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.sched var
+R3108:3132 rt.model.jitter.schedule ScheduleWithJitter jobs_execute_after_jitter def
+R3135:3161 rt.model.basic.schedule Schedule completed_jobs_dont_execute def
+R3214:3220 rt.model.jitter.schedule ScheduleWithJitter pending def
+R3229:3232 mathcomp.ssreflect.ssrbool <> andP thm
+R3229:3232 mathcomp.ssreflect.ssrbool <> andP thm
+R3281:3284 mathcomp.ssreflect.ssrbool <> negP thm
+R3294:3296 Coq.Init.Logic <> not def
+R3281:3284 mathcomp.ssreflect.ssrbool <> negP thm
+R3346:3348 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R3346:3348 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R3369:3374 mathcomp.ssreflect.ssrnat <> leqNgt thm
+R3369:3374 mathcomp.ssreflect.ssrnat <> leqNgt thm
+R3369:3374 mathcomp.ssreflect.ssrnat <> leqNgt thm
+R3398:3401 mathcomp.ssreflect.ssrbool <> negP thm
+R3436:3442 rt.model.basic.schedule Schedule service def
+R3454:3458 mathcomp.ssreflect.ssrnat <> addn1 thm
+R3460:3471 mathcomp.ssreflect.bigop <> big_nat_recr thm
+R3454:3458 mathcomp.ssreflect.ssrnat <> addn1 thm
+R3454:3458 mathcomp.ssreflect.ssrnat <> addn1 thm
+R3460:3471 mathcomp.ssreflect.bigop <> big_nat_recr thm
+R3460:3471 mathcomp.ssreflect.bigop <> big_nat_recr thm
+R3496:3502 mathcomp.ssreflect.ssrnat <> leq_add thm
+R3496:3502 mathcomp.ssreflect.ssrnat <> leq_add thm
+R3546:3548 mathcomp.ssreflect.eqtype <> eqP thm
+R3599:3602 mathcomp.ssreflect.ssrnat <> lt0n thm
+R3611:3613 mathcomp.ssreflect.eqtype <> eqP thm
+R3599:3602 mathcomp.ssreflect.ssrnat <> lt0n thm
+R3599:3602 mathcomp.ssreflect.ssrnat <> lt0n thm
+R3611:3613 mathcomp.ssreflect.eqtype <> eqP thm
+R3630:3632 mathcomp.ssreflect.eqtype <> eqP thm
+R3661:3684 rt.model.basic.schedule Schedule not_scheduled_no_service thm
+R3661:3684 rt.model.basic.schedule Schedule not_scheduled_no_service thm
+R3661:3684 rt.model.basic.schedule Schedule not_scheduled_no_service thm
+R3759:3765 rt.model.jitter.schedule ScheduleWithJitter.ArrivalDependentProperties.BasicLemmas.Pending <> sec
+sec 3783:3789 ScheduleWithJitter.ArrivalDependentProperties.BasicLemmas Service
+prf 3925:3945 ScheduleWithJitter arrival_before_jitter
+R3959:3985 rt.model.basic.schedule Schedule jobs_must_arrive_to_execute def
+R3987:3991 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.sched var
+R4030:4054 rt.model.jitter.schedule ScheduleWithJitter jobs_execute_after_jitter def
+R4057:4083 rt.model.basic.schedule Schedule jobs_must_arrive_to_execute def
+R4123:4149 rt.model.basic.arrival_sequence ArrivalSequence has_arrived def
+R4175:4183 mathcomp.ssreflect.ssrnat <> leq_add2r thm
+R4186:4195 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.job_jitter var
+R4175:4183 mathcomp.ssreflect.ssrnat <> leq_add2r thm
+R4186:4195 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.job_jitter var
+R4175:4183 mathcomp.ssreflect.ssrnat <> leq_add2r thm
+R4186:4195 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.job_jitter var
+R4223:4231 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R4272:4298 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.BasicLemmas.H_jobs_execute_after_jitter var
+R4311:4318 mathcomp.ssreflect.ssrnat <> leq_addr thm
+R4223:4231 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R4272:4298 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.BasicLemmas.H_jobs_execute_after_jitter var
+R4311:4318 mathcomp.ssreflect.ssrnat <> leq_addr thm
+prf 4352:4377 ScheduleWithJitter service_before_jitter_zero
+R4447:4462 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R4483:4485 Coq.Init.Logic <> :type_scope:x_'='_x not
+R4463:4472 rt.model.basic.schedule Schedule service_at def
+R4482:4482 rt.model.jitter.schedule <> t var
+R4480:4480 rt.model.jitter.schedule <> j var
+R4474:4478 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.sched var
+R4416:4418 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<'_x not
+R4415:4415 rt.model.jitter.schedule <> t var
+R4432:4434 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R4419:4429 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R4431:4431 rt.model.jitter.schedule <> j var
+R4435:4444 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.job_jitter var
+R4446:4446 rt.model.jitter.schedule <> j var
+R4592:4594 mathcomp.ssreflect.eqtype <> eqP thm
+R4606:4629 rt.model.basic.schedule Schedule not_scheduled_no_service thm
+R4638:4641 mathcomp.ssreflect.ssrbool <> negP thm
+R4592:4594 mathcomp.ssreflect.eqtype <> eqP thm
+R4606:4629 rt.model.basic.schedule Schedule not_scheduled_no_service thm
+R4606:4629 rt.model.basic.schedule Schedule not_scheduled_no_service thm
+R4638:4641 mathcomp.ssreflect.ssrbool <> negP thm
+R4689:4697 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R4721:4724 mathcomp.ssreflect.ssrnat <> ltnn thm
+R4689:4697 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R4721:4724 mathcomp.ssreflect.ssrnat <> ltnn thm
+R4721:4724 mathcomp.ssreflect.ssrnat <> ltnn thm
+prf 4764:4800 ScheduleWithJitter cumulative_service_before_jitter_zero
+R4876:4891 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R4932:4934 Coq.Init.Logic <> :type_scope:x_'='_x not
+R4892:4897 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R4900:4903 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R4905:4907 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R4910:4911 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R4898:4899 rt.model.jitter.schedule <> t1 var
+R4908:4909 rt.model.jitter.schedule <> t2 var
+R4912:4921 rt.model.basic.schedule Schedule service_at def
+R4929:4929 rt.model.jitter.schedule <> j var
+R4923:4927 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.sched var
+R4844:4847 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R4842:4843 rt.model.jitter.schedule <> t2 var
+R4861:4863 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R4848:4858 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R4860:4860 rt.model.jitter.schedule <> j var
+R4864:4873 rt.model.jitter.schedule <> ScheduleWithJitter.ArrivalDependentProperties.job_jitter var
+R4875:4875 rt.model.jitter.schedule <> j var
+R4998:5000 mathcomp.ssreflect.eqtype <> eqP thm
+R5012:5016 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R4998:5000 mathcomp.ssreflect.eqtype <> eqP thm
+R5012:5016 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R5012:5016 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R5056:5061 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5064:5067 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5069:5071 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5074:5075 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5035:5043 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R5108:5120 mathcomp.ssreflect.bigop <> big_const_nat thm
+R5122:5130 mathcomp.ssreflect.ssrnat <> iter_addn thm
+R5132:5136 mathcomp.ssreflect.ssrnat <> mul0n thm
+R5138:5142 mathcomp.ssreflect.ssrnat <> addn0 thm
+R5056:5061 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5064:5067 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5069:5071 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5074:5075 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5035:5043 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R5108:5120 mathcomp.ssreflect.bigop <> big_const_nat thm
+R5108:5120 mathcomp.ssreflect.bigop <> big_const_nat thm
+R5122:5130 mathcomp.ssreflect.ssrnat <> iter_addn thm
+R5122:5130 mathcomp.ssreflect.ssrnat <> iter_addn thm
+R5132:5136 mathcomp.ssreflect.ssrnat <> mul0n thm
+R5132:5136 mathcomp.ssreflect.ssrnat <> mul0n thm
+R5138:5142 mathcomp.ssreflect.ssrnat <> addn0 thm
+R5138:5142 mathcomp.ssreflect.ssrnat <> addn0 thm
+R5163:5174 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R5196:5207 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R5163:5174 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R5163:5174 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R5196:5207 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R5177:5182 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5184:5187 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5189:5191 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5193:5193 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5177:5182 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5184:5187 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5189:5191 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5193:5193 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5196:5207 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R5226:5232 mathcomp.ssreflect.bigop <> leq_sum thm
+R5226:5232 mathcomp.ssreflect.bigop <> leq_sum thm
+R5246:5249 mathcomp.ssreflect.ssrbool <> andP thm
+R5253:5256 mathcomp.ssreflect.ssrbool <> andP thm
+R5287:5291 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R5300:5302 mathcomp.ssreflect.eqtype <> eqP thm
+R5311:5336 rt.model.jitter.schedule ScheduleWithJitter service_before_jitter_zero thm
+R5287:5291 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R5287:5291 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R5300:5302 mathcomp.ssreflect.eqtype <> eqP thm
+R5311:5336 rt.model.jitter.schedule ScheduleWithJitter service_before_jitter_zero thm
+R5359:5367 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R5359:5367 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R5398:5404 rt.model.jitter.schedule ScheduleWithJitter.ArrivalDependentProperties.BasicLemmas.Service <> sec
+R5422:5432 rt.model.jitter.schedule ScheduleWithJitter.ArrivalDependentProperties.BasicLemmas <> sec
+R5442:5467 rt.model.jitter.schedule ScheduleWithJitter.ArrivalDependentProperties <> sec
+R5475:5492 rt.model.jitter.schedule ScheduleWithJitter <> mod
+mod 5561:5592 <> ScheduleOfSporadicTaskWithJitter
+sec 5663:5675 ScheduleOfSporadicTaskWithJitter ScheduledJobs
+R5707:5712 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R5734:5739 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 5756:5763 ScheduleOfSporadicTaskWithJitter.ScheduledJobs job_task
+R5769:5772 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R5773:5785 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.sporadic_task var
+R5766:5768 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.Job var
+R5848:5863 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R5865:5867 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.Job var
+R5894:5896 Coq.Init.Datatypes <> nat ind
+var 5913:5917 ScheduleOfSporadicTaskWithJitter.ScheduledJobs sched
+R5920:5927 rt.model.basic.schedule Schedule schedule def
+R5938:5944 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.arr_seq var
+R5929:5936 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.num_cpus var
+var 5992:5994 ScheduleOfSporadicTaskWithJitter.ScheduledJobs tsk
+R5997:6009 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.sporadic_task var
+def 6110:6126 ScheduleOfSporadicTaskWithJitter task_scheduled_on
+R6134:6142 rt.model.basic.schedule Schedule processor def
+R6144:6151 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.num_cpus var
+R6158:6161 rt.model.basic.time Time time def
+R6177:6181 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.sched var
+R6187:6187 rt.model.jitter.schedule <> t var
+R6183:6185 rt.model.jitter.schedule <> cpu var
+R6193:6196 Coq.Init.Datatypes <> Some constr
+R6224:6227 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R6214:6221 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.job_task var
+R6228:6230 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.tsk var
+R6244:6248 Coq.Init.Datatypes <> false constr
+def 6343:6359 ScheduleOfSporadicTaskWithJitter task_is_scheduled
+R6365:6368 rt.model.basic.time Time time def
+R6382:6389 mathcomp.ssreflect.fintype FiniteQuant.Exports :bool_scope:'['_'exists'_x_x_']' not
+R6418:6418 mathcomp.ssreflect.fintype FiniteQuant.Exports :bool_scope:'['_'exists'_x_x_']' not
+R6393:6394 mathcomp.ssreflect.fintype FiniteQuant.Exports :fin_quant_scope:','_x not
+R6395:6411 rt.model.jitter.schedule ScheduleOfSporadicTaskWithJitter task_scheduled_on def
+R6417:6417 rt.model.jitter.schedule <> t var
+def 6510:6539 ScheduleOfSporadicTaskWithJitter jobs_of_task_scheduled_between
+R6549:6552 rt.model.basic.time Time time def
+R6564:6569 mathcomp.ssreflect.seq <> filter def
+R6631:6652 rt.model.basic.schedule Schedule jobs_scheduled_between def
+R6663:6664 rt.model.jitter.schedule <> t2 var
+R6660:6661 rt.model.jitter.schedule <> t1 var
+R6654:6658 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.sched var
+R6580:6584 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R6586:6592 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.arr_seq var
+R6608:6611 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R6598:6605 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.job_task var
+R6607:6607 rt.model.jitter.schedule <> j var
+R6612:6614 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduledJobs.tsk var
+R6679:6691 rt.model.jitter.schedule ScheduleOfSporadicTaskWithJitter.ScheduledJobs <> sec
+sec 6707:6724 ScheduleOfSporadicTaskWithJitter ScheduleProperties
+R6756:6761 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R6783:6788 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 6809:6816 ScheduleOfSporadicTaskWithJitter.ScheduleProperties job_cost
+R6822:6825 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R6826:6829 rt.model.basic.time Time time def
+R6819:6821 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.Job var
+var 6845:6854 ScheduleOfSporadicTaskWithJitter.ScheduleProperties job_jitter
+R6860:6863 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R6864:6867 rt.model.basic.time Time time def
+R6857:6859 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.Job var
+var 6883:6890 ScheduleOfSporadicTaskWithJitter.ScheduleProperties job_task
+R6896:6899 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R6900:6912 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.sporadic_task var
+R6893:6895 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.Job var
+R6971:6986 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R6988:6990 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.Job var
+R7017:7019 Coq.Init.Datatypes <> nat ind
+var 7036:7040 ScheduleOfSporadicTaskWithJitter.ScheduleProperties sched
+R7043:7050 rt.model.basic.schedule Schedule schedule def
+R7061:7067 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.arr_seq var
+R7052:7059 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.num_cpus var
+def 7139:7180 ScheduleOfSporadicTaskWithJitter jobs_of_same_task_dont_execute_in_parallel
+R7205:7209 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R7211:7217 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.arr_seq var
+R7255:7266 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R7286:7289 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R7310:7313 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R7315:7317 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7314:7314 rt.model.jitter.schedule <> j var
+R7318:7319 rt.model.jitter.schedule <> j' var
+R7290:7298 rt.model.basic.schedule Schedule scheduled def
+R7309:7309 rt.model.jitter.schedule <> t var
+R7306:7307 rt.model.jitter.schedule <> j' var
+R7300:7304 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.sched var
+R7267:7275 rt.model.basic.schedule Schedule scheduled def
+R7285:7285 rt.model.jitter.schedule <> t var
+R7283:7283 rt.model.jitter.schedule <> j var
+R7277:7281 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.sched var
+R7241:7243 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7231:7238 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.job_task var
+R7240:7240 rt.model.jitter.schedule <> j var
+R7244:7251 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.job_task var
+R7253:7254 rt.model.jitter.schedule <> j' var
+def 7385:7411 ScheduleOfSporadicTaskWithJitter task_precedence_constraints
+R7436:7440 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R7442:7448 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.arr_seq var
+R7486:7497 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R7528:7539 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R7577:7580 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R7581:7583 mathcomp.ssreflect.ssrbool <> :bool_scope:'~~'_x not
+R7584:7592 rt.model.basic.schedule Schedule scheduled def
+R7603:7603 rt.model.jitter.schedule <> t var
+R7600:7601 rt.model.jitter.schedule <> j' var
+R7594:7598 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.sched var
+R7540:7546 rt.model.jitter.schedule ScheduleWithJitter pending def
+R7576:7576 rt.model.jitter.schedule <> t var
+R7574:7574 rt.model.jitter.schedule <> j var
+R7568:7572 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.sched var
+R7557:7566 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.job_jitter var
+R7548:7555 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.job_cost var
+R7511:7513 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<'_x not
+R7498:7508 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R7510:7510 rt.model.jitter.schedule <> j var
+R7514:7524 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R7526:7527 rt.model.jitter.schedule <> j' var
+R7472:7474 Coq.Init.Logic <> :type_scope:x_'='_x not
+R7462:7469 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.job_task var
+R7471:7471 rt.model.jitter.schedule <> j var
+R7475:7482 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.ScheduleProperties.job_task var
+R7484:7485 rt.model.jitter.schedule <> j' var
+R7617:7634 rt.model.jitter.schedule ScheduleOfSporadicTaskWithJitter.ScheduleProperties <> sec
+sec 7648:7658 ScheduleOfSporadicTaskWithJitter BasicLemmas
+R7740:7745 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 7762:7770 ScheduleOfSporadicTaskWithJitter.BasicLemmas task_cost
+R7786:7789 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R7790:7793 rt.model.basic.time Time time def
+R7773:7785 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.sporadic_task var
+var 7809:7821 ScheduleOfSporadicTaskWithJitter.BasicLemmas task_deadline
+R7837:7840 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R7841:7844 rt.model.basic.time Time time def
+R7824:7836 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.sporadic_task var
+R7870:7875 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 7896:7903 ScheduleOfSporadicTaskWithJitter.BasicLemmas job_cost
+R7909:7912 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R7913:7916 rt.model.basic.time Time time def
+R7906:7908 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.Job var
+var 7932:7943 ScheduleOfSporadicTaskWithJitter.BasicLemmas job_deadline
+R7949:7952 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R7953:7956 rt.model.basic.time Time time def
+R7946:7948 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.Job var
+var 7972:7979 ScheduleOfSporadicTaskWithJitter.BasicLemmas job_task
+R7985:7988 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R7989:8001 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.sporadic_task var
+R7982:7984 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.Job var
+R8084:8099 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R8101:8103 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.Job var
+R8130:8132 Coq.Init.Datatypes <> nat ind
+var 8149:8153 ScheduleOfSporadicTaskWithJitter.BasicLemmas sched
+R8156:8163 rt.model.basic.schedule Schedule schedule def
+R8174:8180 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.arr_seq var
+R8165:8172 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.num_cpus var
+var 8263:8296 ScheduleOfSporadicTaskWithJitter.BasicLemmas jobs_dont_execute_after_completion
+R8307:8333 rt.model.basic.schedule Schedule completed_jobs_dont_execute def
+R8344:8348 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.sched var
+R8335:8342 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.job_cost var
+var 8365:8367 ScheduleOfSporadicTaskWithJitter.BasicLemmas tsk
+R8370:8382 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.sporadic_task var
+var 8403:8403 ScheduleOfSporadicTaskWithJitter.BasicLemmas j
+R8406:8410 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R8412:8418 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.arr_seq var
+var 8436:8448 ScheduleOfSporadicTaskWithJitter.BasicLemmas H_job_of_task
+R8461:8463 Coq.Init.Logic <> :type_scope:x_'='_x not
+R8451:8458 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.job_task var
+R8460:8460 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.j var
+R8464:8466 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.tsk var
+var 8484:8492 ScheduleOfSporadicTaskWithJitter.BasicLemmas valid_job
+R8501:8518 rt.model.basic.job Job valid_sporadic_job def
+R8575:8575 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.j var
+R8566:8573 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.job_task var
+R8553:8564 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.job_deadline var
+R8544:8551 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.job_cost var
+R8530:8542 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.task_deadline var
+R8520:8528 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.task_cost var
+prf 8662:8692 ScheduleOfSporadicTaskWithJitter cumulative_service_le_task_cost
+R8754:8757 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R8727:8740 rt.model.basic.schedule Schedule service_during def
+R8752:8753 rt.model.jitter.schedule <> t' var
+R8750:8750 rt.model.jitter.schedule <> t var
+R8748:8748 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.j var
+R8742:8746 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.sched var
+R8758:8766 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.task_cost var
+R8768:8770 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.tsk var
+R8826:8843 rt.model.basic.job Job valid_sporadic_job def
+R8894:8901 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.job_cost var
+R8903:8903 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.j var
+R8873:8881 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R8932:8944 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.H_job_of_task var
+R8894:8901 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.job_cost var
+R8903:8903 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.j var
+R8873:8881 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R8932:8944 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.H_job_of_task var
+R8932:8944 rt.model.jitter.schedule <> ScheduleOfSporadicTaskWithJitter.BasicLemmas.H_job_of_task var
+R8976:9005 rt.model.basic.schedule Schedule cumulative_service_le_job_cost thm
+R8976:9005 rt.model.basic.schedule Schedule cumulative_service_le_job_cost thm
+R9024:9034 rt.model.jitter.schedule ScheduleOfSporadicTaskWithJitter.BasicLemmas <> sec
+R9044:9075 rt.model.jitter.schedule ScheduleOfSporadicTaskWithJitter <> mod

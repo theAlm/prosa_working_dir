@@ -1,0 +1,2 @@
+model/jitter/platform.vo model/jitter/platform.glob model/jitter/platform.v.beautified: model/jitter/platform.v util/all.vo model/jitter/task.vo model/jitter/job.vo model/jitter/schedule.vo model/jitter/priority.vo model/jitter/task_arrival.vo model/jitter/interference.vo
+model/jitter/platform.vio: model/jitter/platform.v util/all.vio model/jitter/task.vio model/jitter/job.vio model/jitter/schedule.vio model/jitter/priority.vio model/jitter/task_arrival.vio model/jitter/interference.vio

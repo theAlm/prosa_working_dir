@@ -1,0 +1,312 @@
+DIGEST 3665705d9151e53e89ee5751edb3c13c
+Frt.model.basic.priority
+R15:25 rt.util.all <> <> lib
+R43:61 rt.model.basic.task <> <> lib
+R63:80 rt.model.basic.job <> <> lib
+R82:104 rt.model.basic.schedule <> <> lib
+R136:144 mathcomp.ssreflect.ssreflect <> <> lib
+R146:152 mathcomp.ssreflect.ssrbool <> <> lib
+R154:159 mathcomp.ssreflect.eqtype <> <> lib
+R161:166 mathcomp.ssreflect.ssrnat <> <> lib
+R168:170 mathcomp.ssreflect.seq <> <> lib
+mod 263:270 <> Priority
+sec 317:328 Priority PriorityDefs
+R397:402 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 419:425 Priority.PriorityDefs arr_seq
+R428:443 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R445:447 rt.model.basic.priority <> Priority.PriorityDefs.Job var
+sec 463:473 Priority.PriorityDefs Definitions
+def 805:815 Priority JLDP_policy
+R824:827 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R841:844 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R858:861 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R862:865 Coq.Init.Datatypes <> bool ind
+R845:849 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R851:857 rt.model.basic.priority <> Priority.PriorityDefs.arr_seq var
+R828:832 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R834:840 rt.model.basic.priority <> Priority.PriorityDefs.arr_seq var
+R820:823 rt.model.basic.time Time time def
+var 1098:1110 Priority.PriorityDefs.Definitions sporadic_task
+R1113:1118 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+def 1138:1146 Priority FP_policy
+R1164:1167 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1181:1184 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1185:1188 Coq.Init.Datatypes <> bool ind
+R1168:1180 rt.model.basic.priority <> Priority.PriorityDefs.Definitions.sporadic_task var
+R1151:1163 rt.model.basic.priority <> Priority.PriorityDefs.Definitions.sporadic_task var
+R1200:1210 rt.model.basic.priority Priority.PriorityDefs.Definitions <> sec
+sec 1230:1244 Priority.PriorityDefs ValidJLFPPolicy
+var 1263:1280 Priority.PriorityDefs.ValidJLFPPolicy is_higher_priority
+R1283:1293 rt.model.basic.priority Priority JLDP_policy def
+def 1394:1410 Priority JLFP_is_reflexive
+R1433:1441 mathcomp.ssreflect.ssrbool <> reflexive def
+R1444:1461 rt.model.basic.priority <> Priority.PriorityDefs.ValidJLFPPolicy.is_higher_priority var
+R1463:1463 rt.model.basic.priority <> t var
+def 1521:1538 Priority JLFP_is_transitive
+R1561:1570 mathcomp.ssreflect.ssrbool <> transitive def
+R1573:1590 rt.model.basic.priority <> Priority.PriorityDefs.ValidJLFPPolicy.is_higher_priority var
+R1592:1592 rt.model.basic.priority <> t var
+def 1712:1724 Priority JLFP_is_total
+R1747:1751 mathcomp.ssreflect.ssrbool <> total def
+R1754:1771 rt.model.basic.priority <> Priority.PriorityDefs.ValidJLFPPolicy.is_higher_priority var
+R1773:1773 rt.model.basic.priority <> t var
+def 1988:2004 Priority valid_JLDP_policy
+R2034:2037 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R2017:2033 rt.model.basic.priority Priority JLFP_is_reflexive def
+R2056:2059 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R2038:2055 rt.model.basic.priority Priority JLFP_is_transitive def
+R2060:2072 rt.model.basic.priority Priority JLFP_is_total def
+R2084:2098 rt.model.basic.priority Priority.PriorityDefs.ValidJLFPPolicy <> sec
+sec 2114:2132 Priority.PriorityDefs MonotonicPriorities
+R2166:2171 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 2190:2197 Priority.PriorityDefs.MonotonicPriorities job_task
+R2203:2206 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2207:2219 rt.model.basic.priority <> Priority.PriorityDefs.MonotonicPriorities.sporadic_task var
+R2200:2202 rt.model.basic.priority <> Priority.PriorityDefs.Job var
+var 2237:2254 Priority.PriorityDefs.MonotonicPriorities higher_eq_priority
+R2257:2267 rt.model.basic.priority Priority JLDP_policy def
+def 2300:2319 Priority monotonic_priorities
+R2346:2350 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R2352:2358 rt.model.basic.priority <> Priority.PriorityDefs.arr_seq var
+R2398:2411 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2442:2455 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2456:2473 rt.model.basic.priority <> Priority.PriorityDefs.MonotonicPriorities.higher_eq_priority var
+R2479:2480 rt.model.basic.priority <> j' var
+R2477:2477 rt.model.basic.priority <> j var
+R2475:2475 rt.model.basic.priority <> t var
+R2425:2427 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<'_x not
+R2412:2422 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R2424:2424 rt.model.basic.priority <> j var
+R2428:2438 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R2440:2441 rt.model.basic.priority <> j' var
+R2384:2386 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2374:2381 rt.model.basic.priority <> Priority.PriorityDefs.MonotonicPriorities.job_task var
+R2383:2383 rt.model.basic.priority <> j var
+R2387:2394 rt.model.basic.priority <> Priority.PriorityDefs.MonotonicPriorities.job_task var
+R2396:2397 rt.model.basic.priority <> j' var
+R2498:2516 rt.model.basic.priority Priority.PriorityDefs.MonotonicPriorities <> sec
+sec 2536:2548 Priority.PriorityDefs ValidFPPolicy
+R2582:2587 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 2613:2630 Priority.PriorityDefs.ValidFPPolicy is_higher_priority
+R2633:2641 rt.model.basic.priority Priority FP_policy def
+R2643:2655 rt.model.basic.priority <> Priority.PriorityDefs.ValidFPPolicy.sporadic_task var
+def 2676:2690 Priority FP_is_reflexive
+R2695:2703 mathcomp.ssreflect.ssrbool <> reflexive def
+R2705:2722 rt.model.basic.priority <> Priority.PriorityDefs.ValidFPPolicy.is_higher_priority var
+def 2743:2758 Priority FP_is_transitive
+R2763:2772 mathcomp.ssreflect.ssrbool <> transitive def
+R2774:2791 rt.model.basic.priority <> Priority.PriorityDefs.ValidFPPolicy.is_higher_priority var
+def 2818:2828 Priority FP_is_total
+R2833:2837 mathcomp.ssreflect.ssrbool <> total def
+R2839:2856 rt.model.basic.priority <> Priority.PriorityDefs.ValidFPPolicy.is_higher_priority var
+def 2967:2981 Priority valid_FP_policy
+R3009:3012 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R2994:3008 rt.model.basic.priority Priority FP_is_reflexive def
+R3029:3032 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R3013:3028 rt.model.basic.priority Priority FP_is_transitive def
+R3033:3043 rt.model.basic.priority Priority FP_is_total def
+R3055:3067 rt.model.basic.priority Priority.PriorityDefs.ValidFPPolicy <> sec
+R3077:3088 rt.model.basic.priority Priority.PriorityDefs <> sec
+sec 3104:3124 Priority RateDeadlineMonotonic
+R3156:3161 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 3178:3188 Priority.RateDeadlineMonotonic task_period
+R3204:3207 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3208:3211 rt.model.basic.time Time time def
+R3191:3203 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.sporadic_task var
+var 3227:3239 Priority.RateDeadlineMonotonic task_deadline
+R3255:3258 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3259:3262 rt.model.basic.time Time time def
+R3242:3254 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.sporadic_task var
+def 3351:3352 Priority RM
+R3366:3378 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.sporadic_task var
+R3400:3403 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R3384:3394 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_period var
+R3396:3399 rt.model.basic.priority <> tsk1 var
+R3404:3414 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_period var
+R3416:3419 rt.model.basic.priority <> tsk2 var
+def 3438:3439 Priority DM
+R3453:3465 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.sporadic_task var
+R3489:3492 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R3471:3483 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_deadline var
+R3485:3488 rt.model.basic.priority <> tsk1 var
+R3493:3505 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_deadline var
+R3507:3510 rt.model.basic.priority <> tsk2 var
+prf 3570:3580 Priority rm_is_valid
+R3584:3598 rt.model.basic.priority Priority valid_FP_policy def
+R3600:3601 rt.model.basic.priority Priority RM def
+R3628:3642 rt.model.basic.priority Priority valid_FP_policy def
+R3645:3659 rt.model.basic.priority Priority FP_is_reflexive def
+R3662:3677 rt.model.basic.priority Priority FP_is_transitive def
+R3680:3681 rt.model.basic.priority Priority RM def
+R3787:3797 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_period var
+R3766:3774 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R3787:3797 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_period var
+R3766:3774 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R3841:3843 mathcomp.ssreflect.ssrbool <> orP thm
+R3856:3859 mathcomp.ssreflect.ssrnat <> leqP thm
+R3881:3891 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_period var
+R3862:3872 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_period var
+R3936:3939 mathcomp.ssreflect.ssrnat <> ltnW thm
+R3841:3843 mathcomp.ssreflect.ssrbool <> orP thm
+R3856:3859 mathcomp.ssreflect.ssrnat <> leqP thm
+R3881:3891 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_period var
+R3862:3872 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_period var
+R3936:3939 mathcomp.ssreflect.ssrnat <> ltnW thm
+prf 4014:4024 Priority dm_is_valid
+R4028:4042 rt.model.basic.priority Priority valid_FP_policy def
+R4044:4045 rt.model.basic.priority Priority DM def
+R4072:4086 rt.model.basic.priority Priority valid_FP_policy def
+R4089:4103 rt.model.basic.priority Priority FP_is_reflexive def
+R4106:4121 rt.model.basic.priority Priority FP_is_transitive def
+R4124:4125 rt.model.basic.priority Priority DM def
+R4204:4212 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R4204:4212 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R4255:4257 mathcomp.ssreflect.ssrbool <> orP thm
+R4270:4273 mathcomp.ssreflect.ssrnat <> leqP thm
+R4297:4309 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_deadline var
+R4276:4288 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_deadline var
+R4356:4359 mathcomp.ssreflect.ssrnat <> ltnW thm
+R4255:4257 mathcomp.ssreflect.ssrbool <> orP thm
+R4270:4273 mathcomp.ssreflect.ssrnat <> leqP thm
+R4297:4309 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_deadline var
+R4276:4288 rt.model.basic.priority <> Priority.RateDeadlineMonotonic.task_deadline var
+R4356:4359 mathcomp.ssreflect.ssrnat <> ltnW thm
+R4379:4399 rt.model.basic.priority Priority.RateDeadlineMonotonic <> sec
+sec 4413:4424 Priority GeneralizeFP
+R4456:4461 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R4483:4488 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 4505:4512 Priority.GeneralizeFP job_task
+R4518:4521 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R4522:4534 rt.model.basic.priority <> Priority.GeneralizeFP.sporadic_task var
+R4515:4517 rt.model.basic.priority <> Priority.GeneralizeFP.Job var
+var 4550:4556 Priority.GeneralizeFP arr_seq
+R4559:4574 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R4576:4578 rt.model.basic.priority <> Priority.GeneralizeFP.Job var
+var 4594:4601 Priority.GeneralizeFP num_cpus
+R4604:4606 Coq.Init.Datatypes <> nat ind
+def 4687:4696 Priority FP_to_JLDP
+R4708:4716 rt.model.basic.priority Priority FP_policy def
+R4718:4730 rt.model.basic.priority <> Priority.GeneralizeFP.sporadic_task var
+R4735:4745 rt.model.basic.priority Priority JLDP_policy def
+R4747:4753 rt.model.basic.priority <> Priority.GeneralizeFP.arr_seq var
+R4772:4775 rt.model.basic.time Time time def
+R4791:4795 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R4797:4803 rt.model.basic.priority <> Priority.GeneralizeFP.arr_seq var
+R4817:4823 rt.model.basic.priority <> task_hp var
+R4843:4850 rt.model.basic.priority <> Priority.GeneralizeFP.job_task var
+R4852:4855 rt.model.basic.priority <> jlow var
+R4826:4833 rt.model.basic.priority <> Priority.GeneralizeFP.job_task var
+R4835:4839 rt.model.basic.priority <> jhigh var
+prf 4950:4971 Priority valid_FP_is_valid_JLDP
+R5001:5015 rt.model.basic.priority Priority valid_FP_policy def
+R5017:5023 rt.model.basic.priority <> task_hp var
+R5035:5051 rt.model.basic.priority Priority valid_JLDP_policy def
+R5054:5063 rt.model.basic.priority Priority FP_to_JLDP def
+R5065:5071 rt.model.basic.priority <> task_hp var
+R5099:5108 rt.model.basic.priority Priority FP_to_JLDP def
+R5111:5125 rt.model.basic.priority Priority valid_FP_policy def
+R5128:5144 rt.model.basic.priority Priority valid_JLDP_policy def
+R5160:5174 rt.model.basic.priority Priority FP_is_reflexive def
+R5177:5192 rt.model.basic.priority Priority FP_is_transitive def
+R5195:5205 rt.model.basic.priority Priority FP_is_total def
+R5221:5237 rt.model.basic.priority Priority JLFP_is_reflexive def
+R5240:5257 rt.model.basic.priority Priority JLFP_is_transitive def
+R5260:5272 rt.model.basic.priority Priority JLFP_is_total def
+R5275:5283 mathcomp.ssreflect.ssrbool <> reflexive def
+R5286:5295 mathcomp.ssreflect.ssrbool <> transitive def
+R5481:5492 rt.model.basic.priority Priority.GeneralizeFP <> sec
+sec 5506:5513 Priority JLFPDefs
+R5545:5550 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R5572:5577 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R5604:5606 Coq.Init.Datatypes <> nat ind
+R5632:5647 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R5649:5651 rt.model.basic.priority <> Priority.JLFPDefs.Job var
+var 5669:5686 Priority.JLFPDefs is_higher_priority
+R5689:5699 rt.model.basic.priority Priority JLDP_policy def
+R5701:5707 rt.model.basic.priority <> Priority.JLFPDefs.arr_seq var
+def 5809:5822 Priority is_JLFP_policy
+R5845:5855 rt.model.basic.priority Priority JLDP_policy def
+R5857:5863 rt.model.basic.priority <> Priority.JLFPDefs.arr_seq var
+R5928:5931 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R5932:5949 rt.model.basic.priority <> is_higher_priority var
+R5957:5958 rt.model.basic.priority <> j2 var
+R5954:5955 rt.model.basic.priority <> j1 var
+R5951:5952 rt.model.basic.priority <> t' var
+R5902:5919 rt.model.basic.priority <> is_higher_priority var
+R5926:5927 rt.model.basic.priority <> j2 var
+R5923:5924 rt.model.basic.priority <> j1 var
+R5921:5921 rt.model.basic.priority <> t var
+var 6026:6033 Priority.JLFPDefs job_task
+R6039:6042 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R6043:6055 rt.model.basic.priority <> Priority.JLFPDefs.sporadic_task var
+R6036:6038 rt.model.basic.priority <> Priority.JLFPDefs.Job var
+prf 6068:6077 Priority FP_is_JLFP
+R6122:6135 rt.model.basic.priority Priority is_JLFP_policy def
+R6138:6147 rt.model.basic.priority Priority FP_to_JLDP def
+R6158:6175 rt.model.basic.priority <> FP_higher_priority var
+R6149:6156 rt.model.basic.priority <> Priority.JLFPDefs.job_task var
+R6206:6219 rt.model.basic.priority Priority is_JLFP_policy def
+R6222:6236 rt.model.basic.priority Priority valid_FP_policy def
+R6255:6262 rt.model.basic.priority Priority.JLFPDefs <> sec
+sec 6276:6282 Priority EDFDefs
+R6304:6309 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 6326:6332 Priority.EDFDefs arr_seq
+R6335:6350 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R6352:6354 rt.model.basic.priority <> Priority.EDFDefs.Job var
+var 6370:6381 Priority.EDFDefs job_deadline
+R6387:6390 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R6391:6394 rt.model.basic.time Time time def
+R6384:6386 rt.model.basic.priority <> Priority.EDFDefs.Job var
+def 6419:6421 Priority EDF
+R6427:6430 rt.model.basic.time Time time def
+R6441:6445 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R6447:6453 rt.model.basic.priority <> Priority.EDFDefs.arr_seq var
+R6497:6500 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R6479:6481 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R6465:6475 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R6477:6478 rt.model.basic.priority <> j1 var
+R6482:6493 rt.model.basic.priority <> Priority.EDFDefs.job_deadline var
+R6495:6496 rt.model.basic.priority <> j1 var
+R6515:6517 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R6501:6511 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R6513:6514 rt.model.basic.priority <> j2 var
+R6518:6529 rt.model.basic.priority <> Priority.EDFDefs.job_deadline var
+R6531:6532 rt.model.basic.priority <> j2 var
+prf 6585:6592 Priority edf_JLFP
+R6596:6609 rt.model.basic.priority Priority is_JLFP_policy def
+R6611:6613 rt.model.basic.priority Priority EDF def
+R6644:6657 rt.model.basic.priority Priority is_JLFP_policy def
+R6660:6662 rt.model.basic.priority Priority EDF def
+prf 6685:6700 Priority edf_valid_policy
+R6704:6720 rt.model.basic.priority Priority valid_JLDP_policy def
+R6722:6724 rt.model.basic.priority Priority EDF def
+R6751:6767 rt.model.basic.priority Priority valid_JLDP_policy def
+R6770:6772 rt.model.basic.priority Priority EDF def
+R6775:6791 rt.model.basic.priority Priority JLFP_is_reflexive def
+R6794:6811 rt.model.basic.priority Priority JLFP_is_transitive def
+R6814:6822 mathcomp.ssreflect.ssrbool <> reflexive def
+R6825:6834 mathcomp.ssreflect.ssrbool <> transitive def
+R6890:6894 mathcomp.ssreflect.ssrnat <> leqnn thm
+R6890:6894 mathcomp.ssreflect.ssrnat <> leqnn thm
+R6936:6944 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R6936:6944 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R6993:6995 mathcomp.ssreflect.ssrbool <> orP thm
+R7018:7021 mathcomp.ssreflect.ssrnat <> leqP thm
+R7073:7075 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R7059:7069 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R7076:7087 rt.model.basic.priority <> Priority.EDFDefs.job_deadline var
+R7038:7040 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R7024:7034 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R7041:7052 rt.model.basic.priority <> Priority.EDFDefs.job_deadline var
+R7134:7137 mathcomp.ssreflect.ssrnat <> ltnW thm
+R6993:6995 mathcomp.ssreflect.ssrbool <> orP thm
+R7018:7021 mathcomp.ssreflect.ssrnat <> leqP thm
+R7073:7075 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R7059:7069 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R7076:7087 rt.model.basic.priority <> Priority.EDFDefs.job_deadline var
+R7038:7040 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R7024:7034 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R7041:7052 rt.model.basic.priority <> Priority.EDFDefs.job_deadline var
+R7134:7137 mathcomp.ssreflect.ssrnat <> ltnW thm
+R7157:7163 rt.model.basic.priority Priority.EDFDefs <> sec
+R7171:7178 rt.model.basic.priority Priority <> mod

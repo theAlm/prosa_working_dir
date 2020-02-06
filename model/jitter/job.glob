@@ -1,0 +1,63 @@
+DIGEST a3eb5da3478d8a69fd90b38f627d67ff
+Frt.model.jitter.job
+R15:34 rt.model.jitter.time <> <> lib
+R36:55 rt.model.jitter.task <> <> lib
+R87:92 mathcomp.ssreflect.ssrnat <> <> lib
+R94:100 mathcomp.ssreflect.ssrbool <> <> lib
+R102:107 mathcomp.ssreflect.eqtype <> <> lib
+R128:145 rt.model.basic.job <> <> lib
+mod 200:212 <> JobWithJitter
+sec 302:331 JobWithJitter ValidSporadicTaskJobWithJitter
+R363:368 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 385:393 JobWithJitter.ValidSporadicTaskJobWithJitter task_cost
+R409:412 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R413:416 rt.model.basic.time Time time def
+R396:408 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.sporadic_task var
+var 432:444 JobWithJitter.ValidSporadicTaskJobWithJitter task_deadline
+R460:463 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R464:467 rt.model.basic.time Time time def
+R447:459 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.sporadic_task var
+var 483:493 JobWithJitter.ValidSporadicTaskJobWithJitter task_jitter
+R509:512 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R513:516 rt.model.basic.time Time time def
+R496:508 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.sporadic_task var
+R542:547 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 564:571 JobWithJitter.ValidSporadicTaskJobWithJitter job_cost
+R577:580 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R581:584 rt.model.basic.time Time time def
+R574:576 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.Job var
+var 600:611 JobWithJitter.ValidSporadicTaskJobWithJitter job_deadline
+R617:620 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R621:624 rt.model.basic.time Time time def
+R614:616 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.Job var
+var 640:647 JobWithJitter.ValidSporadicTaskJobWithJitter job_task
+R653:656 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R657:669 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.sporadic_task var
+R650:652 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.Job var
+var 685:694 JobWithJitter.ValidSporadicTaskJobWithJitter job_jitter
+R700:703 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R704:707 rt.model.basic.time Time time def
+R697:699 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.Job var
+var 728:728 JobWithJitter.ValidSporadicTaskJobWithJitter j
+R731:733 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.Job var
+def 825:850 JobWithJitter job_jitter_leq_task_jitter
+R873:876 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R861:870 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.job_jitter var
+R872:872 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.j var
+R877:887 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.task_jitter var
+R890:897 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.job_task var
+R899:899 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.j var
+var 912:925 JobWithJitter.ValidSporadicTaskJobWithJitter j_is_valid_job
+R936:953 rt.model.basic.job Job valid_sporadic_job def
+R1010:1010 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.j var
+R1001:1008 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.job_task var
+R988:999 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.job_deadline var
+R979:986 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.job_cost var
+R965:977 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.task_deadline var
+R955:963 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.task_cost var
+def 1029:1058 JobWithJitter valid_sporadic_job_with_jitter
+R1083:1086 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R1069:1082 rt.model.jitter.job <> JobWithJitter.ValidSporadicTaskJobWithJitter.j_is_valid_job var
+R1087:1112 rt.model.jitter.job JobWithJitter job_jitter_leq_task_jitter def
+R1122:1151 rt.model.jitter.job JobWithJitter.ValidSporadicTaskJobWithJitter <> sec
+R1159:1171 rt.model.jitter.job JobWithJitter <> mod

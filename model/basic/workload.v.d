@@ -1,0 +1,2 @@
+model/basic/workload.vo model/basic/workload.glob model/basic/workload.v.beautified: model/basic/workload.v util/all.vo model/basic/job.vo model/basic/task.vo model/basic/schedule.vo model/basic/task_arrival.vo model/basic/response_time.vo model/basic/schedulability.vo
+model/basic/workload.vio: model/basic/workload.v util/all.vio model/basic/job.vio model/basic/task.vio model/basic/schedule.vio model/basic/task_arrival.vio model/basic/response_time.vio model/basic/schedulability.vio

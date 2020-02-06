@@ -1,0 +1,56 @@
+DIGEST c3b54460f896069fce49c480bc3013a0
+Frt.model.basic.task_arrival
+R15:25 rt.util.all <> <> lib
+R43:61 rt.model.basic.task <> <> lib
+R63:80 rt.model.basic.job <> <> lib
+R82:104 rt.model.basic.schedule <> <> lib
+R136:144 mathcomp.ssreflect.ssreflect <> <> lib
+R146:152 mathcomp.ssreflect.ssrbool <> <> lib
+R154:159 mathcomp.ssreflect.eqtype <> <> lib
+R161:166 mathcomp.ssreflect.ssrnat <> <> lib
+R168:170 mathcomp.ssreflect.seq <> <> lib
+mod 218:236 <> SporadicTaskArrival
+sec 286:298 SporadicTaskArrival ArrivalModels
+R373:378 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 395:405 SporadicTaskArrival.ArrivalModels task_period
+R421:424 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R425:428 rt.model.basic.time Time time def
+R408:420 rt.model.basic.task_arrival <> SporadicTaskArrival.ArrivalModels.sporadic_task var
+R454:459 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 476:482 SporadicTaskArrival.ArrivalModels arr_seq
+R485:500 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R502:504 rt.model.basic.task_arrival <> SporadicTaskArrival.ArrivalModels.Job var
+var 520:527 SporadicTaskArrival.ArrivalModels job_task
+R533:536 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R537:549 rt.model.basic.task_arrival <> SporadicTaskArrival.ArrivalModels.sporadic_task var
+R530:532 rt.model.basic.task_arrival <> SporadicTaskArrival.ArrivalModels.Job var
+def 634:652 SporadicTaskArrival sporadic_task_model
+R677:681 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R683:689 rt.model.basic.task_arrival <> SporadicTaskArrival.ArrivalModels.arr_seq var
+R713:773 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R798:846 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R878:1048 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1063:1066 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>='_x not
+R1080:1082 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R1067:1077 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R1079:1079 rt.model.basic.task_arrival <> j var
+R1083:1093 rt.model.basic.task_arrival <> SporadicTaskArrival.ArrivalModels.task_period var
+R1096:1103 rt.model.basic.task_arrival <> SporadicTaskArrival.ArrivalModels.job_task var
+R1105:1105 rt.model.basic.task_arrival <> j var
+R1049:1059 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R1061:1062 rt.model.basic.task_arrival <> j' var
+R860:863 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R847:857 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R859:859 rt.model.basic.task_arrival <> j var
+R864:874 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R876:877 rt.model.basic.task_arrival <> j' var
+R784:786 Coq.Init.Logic <> :type_scope:x_'='_x not
+R774:781 rt.model.basic.task_arrival <> SporadicTaskArrival.ArrivalModels.job_task var
+R783:783 rt.model.basic.task_arrival <> j var
+R787:794 rt.model.basic.task_arrival <> SporadicTaskArrival.ArrivalModels.job_task var
+R796:797 rt.model.basic.task_arrival <> j' var
+R707:710 Coq.Init.Logic <> :type_scope:x_'<>'_x not
+R706:706 rt.model.basic.task_arrival <> j var
+R711:712 rt.model.basic.task_arrival <> j' var
+R1116:1128 rt.model.basic.task_arrival SporadicTaskArrival.ArrivalModels <> sec
+R1138:1156 rt.model.basic.task_arrival SporadicTaskArrival <> mod

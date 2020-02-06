@@ -1,0 +1,64 @@
+DIGEST cb8af7b18a1748144e48af4cb3b82355
+Frt.analysis.basic.interference_bound
+R15:25 rt.util.all <> <> lib
+R43:65 rt.model.basic.schedule <> <> lib
+R83:114 rt.analysis.basic.workload_bound <> <> lib
+R146:154 mathcomp.ssreflect.ssreflect <> <> lib
+R156:162 mathcomp.ssreflect.ssrbool <> <> lib
+R164:169 mathcomp.ssreflect.eqtype <> <> lib
+R171:176 mathcomp.ssreflect.ssrnat <> <> lib
+R178:180 mathcomp.ssreflect.seq <> <> lib
+R182:188 mathcomp.ssreflect.fintype <> <> lib
+R190:194 mathcomp.ssreflect.bigop <> <> lib
+mod 205:228 <> InterferenceBoundGeneric
+sec 242:252 InterferenceBoundGeneric Definitions
+R324:329 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 346:354 InterferenceBoundGeneric.Definitions task_cost
+R370:373 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R374:377 rt.model.basic.time Time time def
+R357:369 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.sporadic_task var
+var 393:403 InterferenceBoundGeneric.Definitions task_period
+R419:422 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R423:426 rt.model.basic.time Time time def
+R406:418 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.sporadic_task var
+var 442:454 InterferenceBoundGeneric.Definitions task_deadline
+R470:473 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R474:477 rt.model.basic.time Time time def
+R457:469 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.sporadic_task var
+var 544:546 InterferenceBoundGeneric.Definitions tsk
+R549:561 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.sporadic_task var
+var 573:595 InterferenceBoundGeneric.Definitions task_with_response_time
+R614:616 Coq.Init.Datatypes <> :type_scope:x_'*'_x not
+R601:613 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.sporadic_task var
+R617:620 rt.model.basic.time Time time def
+var 722:727 InterferenceBoundGeneric.Definitions R_prev
+R730:732 mathcomp.ssreflect.seq <> seq syndef
+R734:756 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.task_with_response_time var
+var 817:821 InterferenceBoundGeneric.Definitions delta
+R824:827 rt.model.basic.time Time time def
+sec 843:849 InterferenceBoundGeneric.Definitions PerTask
+var 868:872 InterferenceBoundGeneric.Definitions.PerTask tsk_R
+R875:897 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.task_with_response_time var
+var 910:918 InterferenceBoundGeneric.Definitions.PerTask tsk_other
+R923:925 Coq.Init.Datatypes <> fst def
+R927:931 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.PerTask.tsk_R var
+var 944:950 InterferenceBoundGeneric.Definitions.PerTask R_other
+R955:957 Coq.Init.Datatypes <> snd def
+R959:963 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.PerTask.tsk_R var
+def 1111:1136 InterferenceBoundGeneric interference_bound_generic
+R1149:1152 mathcomp.ssreflect.ssrnat <> minn def
+R1228:1230 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R1210:1213 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'-'_x not
+R1227:1227 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'-'_x not
+R1205:1209 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.delta var
+R1214:1222 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.task_cost var
+R1224:1226 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.tsk var
+R1155:1155 rt.analysis.basic.workload_bound WorkloadBound W def
+R1197:1201 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.delta var
+R1189:1195 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.PerTask.R_other var
+R1179:1187 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.PerTask.tsk_other var
+R1167:1177 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.task_period var
+R1157:1165 rt.analysis.basic.interference_bound <> InterferenceBoundGeneric.Definitions.task_cost var
+R1244:1250 rt.analysis.basic.interference_bound InterferenceBoundGeneric.Definitions.PerTask <> sec
+R1260:1270 rt.analysis.basic.interference_bound InterferenceBoundGeneric.Definitions <> sec
+R1278:1301 rt.analysis.basic.interference_bound InterferenceBoundGeneric <> mod

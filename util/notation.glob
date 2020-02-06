@@ -1,0 +1,141 @@
+DIGEST 0e0f9e838322f2212587a4de5ce5ff2e
+Frt.util.notation
+R29:37 mathcomp.ssreflect.ssreflect <> <> lib
+R39:45 mathcomp.ssreflect.ssrbool <> <> lib
+R47:52 mathcomp.ssreflect.eqtype <> <> lib
+R54:59 mathcomp.ssreflect.ssrnat <> <> lib
+R61:63 mathcomp.ssreflect.seq <> <> lib
+R65:71 mathcomp.ssreflect.fintype <> <> lib
+R73:77 mathcomp.ssreflect.bigop <> <> lib
+sec 162:165 <> Pair
+var 203:203 Pair p
+R207:209 Coq.Init.Datatypes <> :type_scope:x_'*'_x not
+R206:206 rt.util.notation <> Pair.A var
+R210:210 rt.util.notation <> Pair.B var
+def 226:233 <> pair_1st
+R238:240 Coq.Init.Datatypes <> fst def
+R242:242 rt.util.notation <> Pair.p var
+def 258:265 <> pair_2nd
+R270:272 Coq.Init.Datatypes <> snd def
+R274:274 rt.util.notation <> Pair.p var
+R282:285 rt.util.notation Pair <> sec
+sec 319:324 <> Triple
+var 364:364 Triple p
+R372:374 Coq.Init.Datatypes <> :type_scope:x_'*'_x not
+R368:370 Coq.Init.Datatypes <> :type_scope:x_'*'_x not
+R367:367 rt.util.notation <> Triple.A var
+R371:371 rt.util.notation <> Triple.B var
+R375:375 rt.util.notation <> Triple.C var
+def 391:400 <> triple_1st
+R411:413 Coq.Init.Datatypes <> :type_scope:x_'*'_x not
+R407:409 Coq.Init.Datatypes <> :type_scope:x_'*'_x not
+R406:406 rt.util.notation <> Triple.A var
+R410:410 rt.util.notation <> Triple.B var
+R414:414 rt.util.notation <> Triple.C var
+R420:422 Coq.Init.Datatypes <> fst def
+R425:427 Coq.Init.Datatypes <> fst def
+R429:429 rt.util.notation <> p var
+def 446:455 <> triple_2nd
+R460:462 Coq.Init.Datatypes <> snd def
+R465:467 Coq.Init.Datatypes <> fst def
+R469:469 rt.util.notation <> Triple.p var
+def 486:495 <> triple_3rd
+R500:502 Coq.Init.Datatypes <> snd def
+R504:504 rt.util.notation <> Triple.p var
+R512:517 rt.util.notation Triple <> sec
+def 592:604 <> make_sequence
+R622:627 Coq.Init.Datatypes <> option ind
+R629:629 rt.util.notation <> T var
+R643:645 rt.util.notation <> opt var
+R658:661 Coq.Init.Datatypes <> Some constr
+R668:671 mathcomp.ssreflect.seq <> :seq_scope:'['_'::'_x_']' not
+R673:673 mathcomp.ssreflect.seq <> :seq_scope:'['_'::'_x_']' not
+R681:684 Coq.Init.Datatypes <> None constr
+R689:692 mathcomp.ssreflect.seq <> :seq_scope:'['_'::'_']' not
+R958:962 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_')'_x not
+R966:966 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_')'_x not
+R971:973 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_')'_x not
+R975:978 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_')'_x not
+R980:982 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_')'_x not
+R984:985 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_')'_x not
+R967:970 mathcomp.ssreflect.seq <> :seq_scope:'['_'::'_']' not
+R963:965 mathcomp.ssreflect.seq <> cat def
+not 927:927 <> :nat_scope:'\cat_'_'('_x_'<='_x_'<'_x_')'_x
+R1218:1222 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_'|'_x_')'_x not
+R1226:1226 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_'|'_x_')'_x not
+R1231:1233 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_'|'_x_')'_x not
+R1235:1238 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_'|'_x_')'_x not
+R1240:1242 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_'|'_x_')'_x not
+R1244:1246 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_'|'_x_')'_x not
+R1248:1249 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<='_x_'<'_x_'|'_x_')'_x not
+R1227:1230 mathcomp.ssreflect.seq <> :seq_scope:'['_'::'_']' not
+R1223:1225 mathcomp.ssreflect.seq <> cat def
+not 1183:1183 <> :nat_scope:'\cat_'_'('_x_'<='_x_'<'_x_'|'_x_')'_x
+R1437:1441 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<'_x_')'_x not
+R1445:1445 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<'_x_')'_x not
+R1450:1452 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<'_x_')'_x not
+R1454:1456 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<'_x_')'_x not
+R1458:1459 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<'_x_')'_x not
+R1446:1449 mathcomp.ssreflect.seq <> :seq_scope:'['_'::'_']' not
+R1442:1444 mathcomp.ssreflect.seq <> cat def
+not 1411:1411 <> :nat_scope:'\cat_'_'('_x_'<'_x_')'_x
+R1659:1663 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<'_x_'|'_x_')'_x not
+R1667:1667 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<'_x_'|'_x_')'_x not
+R1672:1674 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<'_x_'|'_x_')'_x not
+R1676:1678 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<'_x_'|'_x_')'_x not
+R1680:1682 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<'_x_'|'_x_')'_x not
+R1684:1685 mathcomp.ssreflect.bigop <> :big_scope:'\big'_'['_x_'/'_x_']_'_'('_x_'<'_x_'|'_x_')'_x not
+R1668:1671 mathcomp.ssreflect.seq <> :seq_scope:'['_'::'_']' not
+R1664:1666 mathcomp.ssreflect.seq <> cat def
+not 1629:1629 <> :nat_scope:'\cat_'_'('_x_'<'_x_'|'_x_')'_x
+R1956:1961 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<-'_x_')'_x not
+R1963:1966 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<-'_x_')'_x not
+R1968:1970 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<-'_x_')'_x not
+R1991:1991 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<-'_x_')'_x not
+R1976:1976 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1978:1978 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1980:1980 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+not 1921:1921 <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_')'_x
+R2230:2235 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<-'_x_'|'_x_')'_x not
+R2237:2240 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<-'_x_'|'_x_')'_x not
+R2242:2245 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<-'_x_'|'_x_')'_x not
+R2266:2273 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<-'_x_'|'_x_')'_x not
+R2294:2294 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<-'_x_'|'_x_')'_x not
+R2251:2251 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2253:2253 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2255:2255 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2279:2279 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2281:2281 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2283:2283 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+not 2191:2191 <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x
+R2506:2511 mathcomp.ssreflect.bigop <> :nat_scope:'\max_'_'('_x_'<-'_x_')'_x not
+R2513:2516 mathcomp.ssreflect.bigop <> :nat_scope:'\max_'_'('_x_'<-'_x_')'_x not
+R2518:2520 mathcomp.ssreflect.bigop <> :nat_scope:'\max_'_'('_x_'<-'_x_')'_x not
+R2541:2541 mathcomp.ssreflect.bigop <> :nat_scope:'\max_'_'('_x_'<-'_x_')'_x not
+R2526:2526 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2528:2528 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2530:2530 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+not 2471:2471 <> :nat_scope:'\max_'_'('_'('_x_','_x_')'_'<-'_x_')'_x
+R2780:2785 mathcomp.ssreflect.bigop <> :nat_scope:'\max_'_'('_x_'<-'_x_'|'_x_')'_x not
+R2787:2790 mathcomp.ssreflect.bigop <> :nat_scope:'\max_'_'('_x_'<-'_x_'|'_x_')'_x not
+R2792:2795 mathcomp.ssreflect.bigop <> :nat_scope:'\max_'_'('_x_'<-'_x_'|'_x_')'_x not
+R2816:2823 mathcomp.ssreflect.bigop <> :nat_scope:'\max_'_'('_x_'<-'_x_'|'_x_')'_x not
+R2844:2844 mathcomp.ssreflect.bigop <> :nat_scope:'\max_'_'('_x_'<-'_x_'|'_x_')'_x not
+R2801:2801 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2803:2803 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2805:2805 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2829:2829 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2831:2831 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2833:2833 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+not 2741:2741 <> :nat_scope:'\max_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x
+R2907:2912 mathcomp.ssreflect.seq <> filter def
+R2938:2938 rt.util.notation <> i var
+R2929:2929 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2931:2931 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2933:2933 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+not 2870:2870 <> :seq_scope:'['_'seq'_'('_x_','_x_')'_'<-'_x_'|'_x_']'
+R3289:3292 Coq.Init.Datatypes <> Some constr
+R3301:3306 mathcomp.ssreflect.ssrbool <> in_mem def
+R3311:3313 mathcomp.ssreflect.ssrbool <> mem def
+R3323:3327 Coq.Init.Datatypes <> false constr
+not 3265:3265 <> :bool_scope:x_'\In'_x

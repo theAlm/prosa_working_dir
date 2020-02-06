@@ -1,0 +1,68 @@
+DIGEST 83caa2d8b602c6ab8bdf2f0648fc651e
+Frt.analysis.parallel.interference_bound_fp
+R15:25 rt.util.all <> <> lib
+R43:65 rt.model.basic.schedule <> <> lib
+R67:89 rt.model.basic.priority <> <> lib
+R91:113 rt.model.basic.workload <> <> lib
+R130:156 rt.model.basic.interference <> <> lib
+R174:208 rt.analysis.parallel.workload_bound <> <> lib
+R210:248 rt.analysis.parallel.interference_bound <> <> lib
+R280:288 mathcomp.ssreflect.ssreflect <> <> lib
+R290:296 mathcomp.ssreflect.ssrbool <> <> lib
+R298:303 mathcomp.ssreflect.eqtype <> <> lib
+R305:310 mathcomp.ssreflect.ssrnat <> <> lib
+R312:314 mathcomp.ssreflect.seq <> <> lib
+R316:322 mathcomp.ssreflect.fintype <> <> lib
+R324:328 mathcomp.ssreflect.bigop <> <> lib
+mod 339:357 <> InterferenceBoundFP
+sec 464:474 InterferenceBoundFP Definitions
+R510:515 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 532:540 InterferenceBoundFP.Definitions task_cost
+R556:559 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R560:563 rt.model.basic.time Time time def
+R543:555 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+var 579:589 InterferenceBoundFP.Definitions task_period
+R605:608 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R609:612 rt.model.basic.time Time time def
+R592:604 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+var 628:640 InterferenceBoundFP.Definitions task_deadline
+R656:659 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R660:663 rt.model.basic.time Time time def
+R643:655 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+var 730:732 InterferenceBoundFP.Definitions tsk
+R735:747 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+var 759:781 InterferenceBoundFP.Definitions task_with_response_time
+R800:802 Coq.Init.Datatypes <> :type_scope:x_'*'_x not
+R787:799 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+R803:806 rt.model.basic.time Time time def
+var 908:913 InterferenceBoundFP.Definitions R_prev
+R916:918 mathcomp.ssreflect.seq <> seq syndef
+R920:942 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.task_with_response_time var
+var 1003:1007 InterferenceBoundFP.Definitions delta
+R1010:1013 rt.model.basic.time Time time def
+var 1067:1084 InterferenceBoundFP.Definitions higher_eq_priority
+R1087:1095 rt.model.basic.priority Priority FP_policy def
+R1097:1109 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+var 1121:1142 InterferenceBoundFP.Definitions can_interfere_with_tsk
+R1147:1167 rt.model.basic.interference Interference fp_can_interfere_with def
+R1188:1190 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.tsk var
+R1169:1186 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.higher_eq_priority var
+var 1203:1226 InterferenceBoundFP.Definitions total_interference_bound
+R1231:1256 rt.analysis.parallel.interference_bound InterferenceBoundGeneric interference_bound_generic def
+R1280:1284 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.delta var
+R1268:1278 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.task_period var
+R1258:1266 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.task_cost var
+def 1419:1445 InterferenceBoundFP total_interference_bound_fp
+R1456:1462 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1472:1473 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1481:1485 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1492:1494 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1527:1537 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1486:1491 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.R_prev var
+R1495:1516 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.can_interfere_with_tsk var
+R1538:1561 rt.analysis.parallel.interference_bound_fp <> InterferenceBoundFP.Definitions.total_interference_bound var
+R1563:1563 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1573:1574 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1582:1582 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1598:1608 rt.analysis.parallel.interference_bound_fp InterferenceBoundFP.Definitions <> sec
+R1616:1634 rt.analysis.parallel.interference_bound_fp InterferenceBoundFP <> mod

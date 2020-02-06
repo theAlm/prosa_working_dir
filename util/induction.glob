@@ -1,0 +1,65 @@
+DIGEST bab1cf4319d78c71f1d511e80871d6ad
+Frt.util.induction
+R15:29 rt.util.tactics <> <> lib
+R61:69 mathcomp.ssreflect.ssreflect <> <> lib
+R71:77 mathcomp.ssreflect.ssrbool <> <> lib
+R79:84 mathcomp.ssreflect.eqtype <> <> lib
+R86:91 mathcomp.ssreflect.ssrnat <> <> lib
+R93:95 mathcomp.ssreflect.seq <> <> lib
+R97:103 mathcomp.ssreflect.fintype <> <> lib
+R105:109 mathcomp.ssreflect.bigop <> <> lib
+sec 165:176 <> NatInduction
+prf 190:199 <> strong_ind
+R221:224 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R218:220 Coq.Init.Datatypes <> nat ind
+R238:238 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R280:290 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R301:301 rt.util.induction <> P var
+R303:303 rt.util.induction <> n var
+R249:249 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R272:276 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R277:277 rt.util.induction <> P var
+R279:279 rt.util.induction <> n var
+R265:268 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R269:269 rt.util.induction <> P var
+R271:271 rt.util.induction <> k var
+R261:263 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<'_x not
+R260:260 rt.util.induction <> k var
+R264:264 rt.util.induction <> n var
+R454:462 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R454:462 mathcomp.ssreflect.ssrnat <> leq_trans thm
+prf 495:506 <> leq_as_delta
+R531:534 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R528:530 Coq.Init.Datatypes <> nat ind
+R548:548 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R576:588 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R617:617 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R568:571 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R572:572 rt.util.induction <> P var
+R574:575 rt.util.induction <> x2 var
+R562:565 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R560:561 rt.util.induction <> x1 var
+R566:567 rt.util.induction <> x2 var
+R603:603 rt.util.induction <> P var
+R608:610 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R606:607 rt.util.induction <> x1 var
+R611:615 rt.util.induction <> delta var
+R681:685 mathcomp.ssreflect.ssrnat <> subnK thm
+R691:695 mathcomp.ssreflect.ssrnat <> addnC thm
+R681:685 mathcomp.ssreflect.ssrnat <> subnK thm
+R681:685 mathcomp.ssreflect.ssrnat <> subnK thm
+R691:695 mathcomp.ssreflect.ssrnat <> addnC thm
+R691:695 mathcomp.ssreflect.ssrnat <> addnC thm
+R769:773 mathcomp.ssreflect.ssrnat <> addn0 thm
+R787:791 mathcomp.ssreflect.ssrnat <> leqnn thm
+R769:773 mathcomp.ssreflect.ssrnat <> addn0 thm
+R769:773 mathcomp.ssreflect.ssrnat <> addn0 thm
+R787:791 mathcomp.ssreflect.ssrnat <> leqnn thm
+R833:837 mathcomp.ssreflect.ssrnat <> addn0 thm
+R846:852 mathcomp.ssreflect.ssrnat <> leq_add thm
+R865:869 mathcomp.ssreflect.ssrnat <> leqnn thm
+R833:837 mathcomp.ssreflect.ssrnat <> addn0 thm
+R833:837 mathcomp.ssreflect.ssrnat <> addn0 thm
+R846:852 mathcomp.ssreflect.ssrnat <> leq_add thm
+R865:869 mathcomp.ssreflect.ssrnat <> leqnn thm
+R903:914 rt.util.induction NatInduction <> sec

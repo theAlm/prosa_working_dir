@@ -1,0 +1,74 @@
+DIGEST 7135c966cf4405f99cbaa1244560d2e8
+Frt.analysis.jitter.interference_bound_fp
+R15:25 rt.util.all <> <> lib
+R43:66 rt.model.jitter.schedule <> <> lib
+R68:91 rt.model.jitter.priority <> <> lib
+R93:116 rt.model.jitter.workload <> <> lib
+R133:160 rt.model.jitter.interference <> <> lib
+R178:210 rt.analysis.jitter.workload_bound <> <> lib
+R212:248 rt.analysis.jitter.interference_bound <> <> lib
+R280:288 mathcomp.ssreflect.ssreflect <> <> lib
+R290:296 mathcomp.ssreflect.ssrbool <> <> lib
+R298:303 mathcomp.ssreflect.eqtype <> <> lib
+R305:310 mathcomp.ssreflect.ssrnat <> <> lib
+R312:314 mathcomp.ssreflect.seq <> <> lib
+R316:322 mathcomp.ssreflect.fintype <> <> lib
+R324:328 mathcomp.ssreflect.bigop <> <> lib
+mod 339:357 <> InterferenceBoundFP
+sec 479:489 InterferenceBoundFP Definitions
+R525:530 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 547:555 InterferenceBoundFP.Definitions task_cost
+R571:574 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R575:578 rt.model.basic.time Time time def
+R558:570 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+var 594:604 InterferenceBoundFP.Definitions task_period
+R620:623 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R624:627 rt.model.basic.time Time time def
+R607:619 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+var 643:655 InterferenceBoundFP.Definitions task_deadline
+R671:674 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R675:678 rt.model.basic.time Time time def
+R658:670 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+var 694:704 InterferenceBoundFP.Definitions task_jitter
+R720:723 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R724:727 rt.model.basic.time Time time def
+R707:719 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+var 794:796 InterferenceBoundFP.Definitions tsk
+R799:811 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+var 823:845 InterferenceBoundFP.Definitions task_with_response_time
+R864:866 Coq.Init.Datatypes <> :type_scope:x_'*'_x not
+R851:863 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+R867:870 rt.model.basic.time Time time def
+var 972:977 InterferenceBoundFP.Definitions R_prev
+R980:982 mathcomp.ssreflect.seq <> seq syndef
+R984:1006 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.task_with_response_time var
+var 1067:1071 InterferenceBoundFP.Definitions delta
+R1074:1077 rt.model.basic.time Time time def
+var 1131:1148 InterferenceBoundFP.Definitions higher_eq_priority
+R1151:1159 rt.model.basic.priority Priority FP_policy def
+R1161:1173 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.sporadic_task var
+var 1185:1206 InterferenceBoundFP.Definitions can_interfere_with_tsk
+R1211:1231 rt.model.basic.interference Interference fp_can_interfere_with def
+R1252:1254 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.tsk var
+R1233:1250 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.higher_eq_priority var
+var 1267:1290 InterferenceBoundFP.Definitions total_interference_bound
+R1295:1320 rt.analysis.jitter.interference_bound InterferenceBoundJitter interference_bound_generic def
+R1360:1364 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.delta var
+R1356:1358 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.tsk var
+R1344:1354 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.task_jitter var
+R1332:1342 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.task_period var
+R1322:1330 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.task_cost var
+def 1499:1525 InterferenceBoundFP total_interference_bound_fp
+R1536:1542 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1552:1553 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1561:1565 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1572:1574 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1607:1617 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1566:1571 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.R_prev var
+R1575:1596 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.can_interfere_with_tsk var
+R1618:1641 rt.analysis.jitter.interference_bound_fp <> InterferenceBoundFP.Definitions.total_interference_bound var
+R1643:1643 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1653:1654 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1662:1662 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1678:1688 rt.analysis.jitter.interference_bound_fp InterferenceBoundFP.Definitions <> sec
+R1696:1714 rt.analysis.jitter.interference_bound_fp InterferenceBoundFP <> mod

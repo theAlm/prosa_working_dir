@@ -1,0 +1,117 @@
+DIGEST 8a8e72cfa4e6979a73ffc03a35504049
+Frt.implementation.jitter.task
+R15:25 rt.util.all <> <> lib
+R43:62 rt.model.jitter.task <> <> lib
+R94:102 mathcomp.ssreflect.ssreflect <> <> lib
+R104:110 mathcomp.ssreflect.ssrbool <> <> lib
+R112:117 mathcomp.ssreflect.ssrnat <> <> lib
+R119:124 mathcomp.ssreflect.eqtype <> <> lib
+R126:128 mathcomp.ssreflect.seq <> <> lib
+mod 139:150 <> ConcreteTask
+sec 193:196 ConcreteTask Defs
+rec 256:268 ConcreteTask concrete_task
+proj 285:291 ConcreteTask task_id
+proj 328:336 ConcreteTask task_cost
+proj 350:360 ConcreteTask task_period
+proj 374:386 ConcreteTask task_deadline
+proj 400:410 ConcreteTask task_jitter
+R294:296 Coq.Init.Datatypes <> nat ind
+R339:341 Coq.Init.Datatypes <> nat ind
+R363:365 Coq.Init.Datatypes <> nat ind
+R389:391 Coq.Init.Datatypes <> nat ind
+R413:415 Coq.Init.Datatypes <> nat ind
+def 546:555 ConcreteTask task_eqdef
+R565:577 rt.implementation.jitter.task ConcreteTask concrete_task rec
+R747:757 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R790:790 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R699:709 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R746:746 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R655:665 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R698:698 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R589:589 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R614:625 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R654:654 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R600:603 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R590:596 rt.implementation.jitter.task ConcreteTask task_id proj
+R598:599 rt.implementation.jitter.task <> t1 var
+R604:610 rt.implementation.jitter.task ConcreteTask task_id proj
+R612:613 rt.implementation.jitter.task <> t2 var
+R638:641 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R626:634 rt.implementation.jitter.task ConcreteTask task_cost proj
+R636:637 rt.implementation.jitter.task <> t1 var
+R642:650 rt.implementation.jitter.task ConcreteTask task_cost proj
+R652:653 rt.implementation.jitter.task <> t2 var
+R680:683 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R666:676 rt.implementation.jitter.task ConcreteTask task_period proj
+R678:679 rt.implementation.jitter.task <> t1 var
+R684:694 rt.implementation.jitter.task ConcreteTask task_period proj
+R696:697 rt.implementation.jitter.task <> t2 var
+R726:729 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R710:722 rt.implementation.jitter.task ConcreteTask task_deadline proj
+R724:725 rt.implementation.jitter.task <> t1 var
+R730:742 rt.implementation.jitter.task ConcreteTask task_deadline proj
+R744:745 rt.implementation.jitter.task <> t2 var
+R772:775 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R758:768 rt.implementation.jitter.task ConcreteTask task_jitter proj
+R770:771 rt.implementation.jitter.task <> t1 var
+R776:786 rt.implementation.jitter.task ConcreteTask task_jitter proj
+R788:789 rt.implementation.jitter.task <> t2 var
+prf 872:879 ConcreteTask eqn_task
+R883:896 mathcomp.ssreflect.eqtype Equality axiom def
+R898:907 rt.implementation.jitter.task ConcreteTask task_eqdef def
+R934:947 mathcomp.ssreflect.eqtype Equality axiom def
+R978:987 rt.implementation.jitter.task ConcreteTask task_eqdef def
+R978:987 rt.implementation.jitter.task ConcreteTask task_eqdef def
+R1024:1031 mathcomp.ssreflect.ssrbool <> ReflectT constr
+R1024:1031 mathcomp.ssreflect.ssrbool <> ReflectT constr
+R1049:1058 rt.implementation.jitter.task ConcreteTask task_eqdef def
+R1087:1090 mathcomp.ssreflect.ssrbool <> andP thm
+R1094:1097 mathcomp.ssreflect.ssrbool <> andP thm
+R1101:1104 mathcomp.ssreflect.ssrbool <> andP thm
+R1108:1111 mathcomp.ssreflect.ssrbool <> andP thm
+R1115:1117 mathcomp.ssreflect.eqtype <> eqP thm
+R1123:1125 mathcomp.ssreflect.eqtype <> eqP thm
+R1134:1136 mathcomp.ssreflect.eqtype <> eqP thm
+R1147:1149 mathcomp.ssreflect.eqtype <> eqP thm
+R1156:1158 mathcomp.ssreflect.eqtype <> eqP thm
+R1245:1252 mathcomp.ssreflect.ssrbool <> ReflectF constr
+R1245:1252 mathcomp.ssreflect.ssrbool <> ReflectF constr
+R1270:1279 rt.implementation.jitter.task ConcreteTask task_eqdef def
+R1282:1284 Coq.Init.Logic <> not def
+R1317:1321 mathcomp.ssreflect.ssrbool <> negbT thm
+R1338:1345 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1317:1321 mathcomp.ssreflect.ssrbool <> negbT thm
+R1338:1345 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1338:1345 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1393:1400 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1393:1400 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1393:1400 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1430:1432 mathcomp.ssreflect.ssrbool <> orP thm
+R1436:1438 mathcomp.ssreflect.ssrbool <> orP thm
+R1447:1449 mathcomp.ssreflect.eqtype <> eqP thm
+R1458:1460 mathcomp.ssreflect.eqtype <> eqP thm
+R1524:1531 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1524:1531 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1524:1531 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1561:1563 mathcomp.ssreflect.ssrbool <> orP thm
+R1572:1574 mathcomp.ssreflect.eqtype <> eqP thm
+R1630:1637 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1630:1637 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1630:1637 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1667:1669 mathcomp.ssreflect.ssrbool <> orP thm
+R1673:1675 mathcomp.ssreflect.eqtype <> eqP thm
+R1683:1685 mathcomp.ssreflect.eqtype <> eqP thm
+def 0:-1 ConcreteTask concrete_task_eqMixin
+R1929:1935 mathcomp.ssreflect.eqtype Equality.Exports EqMixin syndef
+R1937:1944 rt.implementation.jitter.task ConcreteTask eqn_task thm
+def 0:-1 ConcreteTask concrete_task_eqType
+R1997:2002 mathcomp.ssreflect.eqtype Equality.Exports EqType syndef
+R2004:2016 rt.implementation.jitter.task ConcreteTask concrete_task rec
+R2018:2038 rt.implementation.jitter.task ConcreteTask concrete_task_eqMixin canonstruc
+R2048:2051 rt.implementation.jitter.task ConcreteTask.Defs <> sec
+sec 2065:2079 ConcreteTask ConcreteTaskset
+def 2098:2113 ConcreteTask concrete_taskset
+R2124:2133 rt.model.basic.task SporadicTaskset taskset_of def
+R2135:2154 rt.implementation.jitter.task ConcreteTask concrete_task_eqType canonstruc
+R2164:2178 rt.implementation.jitter.task ConcreteTask.ConcreteTaskset <> sec
+R2188:2199 rt.implementation.jitter.task ConcreteTask <> mod

@@ -1,0 +1,364 @@
+DIGEST 55396cbc4f5c39f4f39d1b36ec5d2f3d
+Frt.model.basic.schedulability
+R15:25 rt.util.all <> <> lib
+R43:60 rt.model.basic.job <> <> lib
+R62:80 rt.model.basic.task <> <> lib
+R82:104 rt.model.basic.schedule <> <> lib
+R136:144 mathcomp.ssreflect.ssreflect <> <> lib
+R146:151 mathcomp.ssreflect.eqtype <> <> lib
+R153:159 mathcomp.ssreflect.ssrbool <> <> lib
+R161:166 mathcomp.ssreflect.ssrnat <> <> lib
+R168:170 mathcomp.ssreflect.seq <> <> lib
+R172:176 mathcomp.ssreflect.bigop <> <> lib
+mod 223:236 <> Schedulability
+sec 290:304 Schedulability SchedulableDefs
+R389:394 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R420:435 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R437:439 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.Job var
+var 456:463 Schedulability.SchedulableDefs job_cost
+R469:472 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R473:476 rt.model.basic.time Time time def
+R466:468 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.Job var
+var 492:503 Schedulability.SchedulableDefs job_deadline
+R509:512 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R513:516 rt.model.basic.time Time time def
+R506:508 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.Job var
+sec 534:547 Schedulability.SchedulableDefs ScheduleOfJobs
+R624:626 Coq.Init.Datatypes <> nat ind
+var 645:649 Schedulability.SchedulableDefs.ScheduleOfJobs sched
+R652:659 rt.model.basic.schedule Schedule schedule def
+R670:676 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.arr_seq var
+R661:668 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfJobs.num_cpus var
+var 695:695 Schedulability.SchedulableDefs.ScheduleOfJobs j
+R698:702 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R704:710 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.arr_seq var
+def 819:840 Schedulability job_misses_no_deadline
+R853:861 rt.model.basic.schedule Schedule completed def
+R894:896 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R881:891 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R893:893 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfJobs.j var
+R897:908 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.job_deadline var
+R910:910 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfJobs.j var
+R878:878 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfJobs.j var
+R872:876 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfJobs.sched var
+R863:870 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.job_cost var
+R923:936 rt.model.basic.schedulability Schedulability.SchedulableDefs.ScheduleOfJobs <> sec
+sec 952:966 Schedulability.SchedulableDefs ScheduleOfTasks
+R1000:1005 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 1024:1031 Schedulability.SchedulableDefs.ScheduleOfTasks job_task
+R1037:1040 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1041:1053 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfTasks.sporadic_task var
+R1034:1036 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.Job var
+R1086:1088 Coq.Init.Datatypes <> nat ind
+var 1107:1111 Schedulability.SchedulableDefs.ScheduleOfTasks sched
+R1114:1121 rt.model.basic.schedule Schedule schedule def
+R1132:1138 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.arr_seq var
+R1123:1130 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfTasks.num_cpus var
+var 1192:1194 Schedulability.SchedulableDefs.ScheduleOfTasks tsk
+R1197:1209 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfTasks.sporadic_task var
+def 1324:1346 Schedulability task_misses_no_deadline
+R1370:1374 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R1376:1382 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.arr_seq var
+R1412:1425 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1426:1447 rt.model.basic.schedulability Schedulability job_misses_no_deadline def
+R1455:1455 rt.model.basic.schedulability <> j var
+R1449:1453 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfTasks.sched var
+R1406:1408 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1396:1403 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfTasks.job_task var
+R1405:1405 rt.model.basic.schedulability <> j var
+R1409:1411 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfTasks.tsk var
+def 1607:1636 Schedulability task_misses_no_deadline_before
+R1643:1646 rt.model.basic.time Time time def
+R1671:1675 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R1677:1683 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.arr_seq var
+R1713:1726 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1762:1775 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1776:1797 rt.model.basic.schedulability Schedulability job_misses_no_deadline def
+R1805:1805 rt.model.basic.schedulability <> j var
+R1799:1803 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfTasks.sched var
+R1757:1759 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<'_x not
+R1740:1742 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R1727:1737 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R1739:1739 rt.model.basic.schedulability <> j var
+R1743:1754 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.job_deadline var
+R1756:1756 rt.model.basic.schedulability <> j var
+R1760:1761 rt.model.basic.schedulability <> t' var
+R1707:1709 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1697:1704 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfTasks.job_task var
+R1706:1706 rt.model.basic.schedulability <> j var
+R1710:1712 rt.model.basic.schedulability <> Schedulability.SchedulableDefs.ScheduleOfTasks.tsk var
+R1817:1831 rt.model.basic.schedulability Schedulability.SchedulableDefs.ScheduleOfTasks <> sec
+R1841:1855 rt.model.basic.schedulability Schedulability.SchedulableDefs <> sec
+sec 1869:1879 Schedulability BasicLemmas
+R1911:1916 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 1933:1941 Schedulability.BasicLemmas task_cost
+R1957:1960 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1961:1964 rt.model.basic.time Time time def
+R1944:1956 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sporadic_task var
+var 1980:1990 Schedulability.BasicLemmas task_period
+R2006:2009 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2010:2013 rt.model.basic.time Time time def
+R1993:2005 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sporadic_task var
+var 2029:2041 Schedulability.BasicLemmas task_deadline
+R2057:2060 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2061:2064 rt.model.basic.time Time time def
+R2044:2056 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sporadic_task var
+R2090:2095 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 2112:2119 Schedulability.BasicLemmas job_cost
+R2125:2128 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2129:2132 rt.model.basic.time Time time def
+R2122:2124 rt.model.basic.schedulability <> Schedulability.BasicLemmas.Job var
+var 2148:2159 Schedulability.BasicLemmas job_deadline
+R2165:2168 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2169:2172 rt.model.basic.time Time time def
+R2162:2164 rt.model.basic.schedulability <> Schedulability.BasicLemmas.Job var
+var 2188:2195 Schedulability.BasicLemmas job_task
+R2201:2204 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2205:2217 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sporadic_task var
+R2198:2200 rt.model.basic.schedulability <> Schedulability.BasicLemmas.Job var
+R2243:2258 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R2260:2262 rt.model.basic.schedulability <> Schedulability.BasicLemmas.Job var
+R2336:2338 Coq.Init.Datatypes <> nat ind
+var 2355:2359 Schedulability.BasicLemmas sched
+R2362:2369 rt.model.basic.schedule Schedule schedule def
+R2380:2386 rt.model.basic.schedulability <> Schedulability.BasicLemmas.arr_seq var
+R2371:2378 rt.model.basic.schedulability <> Schedulability.BasicLemmas.num_cpus var
+var 2461:2489 Schedulability.BasicLemmas H_completed_jobs_dont_execute
+R2498:2524 rt.model.basic.schedule Schedule completed_jobs_dont_execute def
+R2535:2539 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sched var
+R2526:2533 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_cost var
+sec 2555:2565 Schedulability.BasicLemmas SpecificJob
+var 2619:2619 Schedulability.BasicLemmas.SpecificJob j
+R2622:2626 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R2628:2634 rt.model.basic.schedulability <> Schedulability.BasicLemmas.arr_seq var
+var 2727:2742 Schedulability.BasicLemmas.SpecificJob no_deadline_miss
+R2753:2774 rt.model.basic.schedulability Schedulability job_misses_no_deadline def
+R2804:2804 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R2798:2802 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sched var
+R2785:2796 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_deadline var
+R2776:2783 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_cost var
+prf 2898:2928 Schedulability service_after_job_deadline_zero
+R2997:3010 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3032:3034 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3011:3020 rt.model.basic.schedule Schedule service_at def
+R3030:3031 rt.model.basic.schedulability <> t' var
+R3028:3028 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3022:3026 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sched var
+R2963:2966 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>='_x not
+R2980:2982 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R2967:2977 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R2979:2979 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R2983:2994 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_deadline var
+R2996:2996 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R2961:2962 rt.model.basic.schedulability <> t' var
+R3189:3210 rt.model.basic.schedulability Schedulability job_misses_no_deadline def
+R3213:3221 rt.model.basic.schedule Schedule completed def
+R3224:3250 rt.model.basic.schedule Schedule completed_jobs_dont_execute def
+R3272:3274 mathcomp.ssreflect.eqtype <> eqP thm
+R3286:3290 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R3272:3274 mathcomp.ssreflect.eqtype <> eqP thm
+R3286:3290 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R3286:3290 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R3333:3340 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_cost var
+R3342:3342 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3312:3320 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R3333:3340 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_cost var
+R3342:3342 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3312:3320 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R3333:3340 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_cost var
+R3342:3342 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3312:3320 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R3402:3406 mathcomp.ssreflect.ssrnat <> addn0 thm
+R3371:3373 mathcomp.ssreflect.eqtype <> eqP thm
+R3402:3406 mathcomp.ssreflect.ssrnat <> addn0 thm
+R3402:3406 mathcomp.ssreflect.ssrnat <> addn0 thm
+R3444:3450 rt.model.basic.schedule Schedule service def
+R3462:3464 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R3458:3458 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3452:3456 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sched var
+R3423:3431 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R3444:3450 rt.model.basic.schedule Schedule service def
+R3462:3464 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R3458:3458 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3452:3456 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sched var
+R3423:3431 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R3503:3509 rt.model.basic.schedule Schedule service def
+R3583:3585 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R3607:3609 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R3594:3604 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R3606:3606 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3610:3621 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_deadline var
+R3623:3623 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3523:3533 mathcomp.ssreflect.bigop <> big_cat_nat thm
+R3648:3656 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R3681:3684 mathcomp.ssreflect.ssrnat <> ltnW thm
+R3583:3585 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R3607:3609 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R3594:3604 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R3606:3606 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3610:3621 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_deadline var
+R3623:3623 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3523:3533 mathcomp.ssreflect.bigop <> big_cat_nat thm
+R3583:3585 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R3607:3609 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R3594:3604 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R3606:3606 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3610:3621 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_deadline var
+R3623:3623 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3523:3533 mathcomp.ssreflect.bigop <> big_cat_nat thm
+R3583:3585 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R3607:3609 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R3594:3604 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R3606:3606 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3610:3621 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_deadline var
+R3623:3623 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3523:3533 mathcomp.ssreflect.bigop <> big_cat_nat thm
+R3583:3585 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R3607:3609 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R3594:3604 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R3606:3606 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3610:3621 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_deadline var
+R3623:3623 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3523:3533 mathcomp.ssreflect.bigop <> big_cat_nat thm
+R3648:3656 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R3648:3656 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R3681:3684 mathcomp.ssreflect.ssrnat <> ltnW thm
+R3709:3720 mathcomp.ssreflect.bigop <> big_nat_recr thm
+R3735:3742 mathcomp.ssreflect.ssrnat <> leq_addl thm
+R3709:3720 mathcomp.ssreflect.bigop <> big_nat_recr thm
+R3709:3720 mathcomp.ssreflect.bigop <> big_nat_recr thm
+R3735:3742 mathcomp.ssreflect.ssrnat <> leq_addl thm
+prf 3835:3876 Schedulability cumulative_service_after_job_deadline_zero
+R3949:3962 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R4004:4006 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3963:3968 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R3971:3974 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R3976:3978 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R3982:3983 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R3969:3970 rt.model.basic.schedulability <> t' var
+R3979:3981 rt.model.basic.schedulability <> t'' var
+R3984:3993 rt.model.basic.schedule Schedule service_at def
+R4001:4001 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3995:3999 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sched var
+R3915:3918 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>='_x not
+R3932:3934 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R3919:3929 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R3931:3931 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3935:3946 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_deadline var
+R3948:3948 rt.model.basic.schedulability <> Schedulability.BasicLemmas.SpecificJob.j var
+R3913:3914 rt.model.basic.schedulability <> t' var
+R4042:4044 mathcomp.ssreflect.eqtype <> eqP thm
+R4056:4060 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R4042:4044 mathcomp.ssreflect.eqtype <> eqP thm
+R4056:4060 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R4056:4060 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R4079:4090 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R4104:4110 mathcomp.ssreflect.bigop <> eq_bigr thm
+R4164:4176 mathcomp.ssreflect.bigop <> big_const_seq thm
+R4178:4186 mathcomp.ssreflect.ssrnat <> iter_addn thm
+R4188:4192 mathcomp.ssreflect.ssrnat <> mul0n thm
+R4194:4198 mathcomp.ssreflect.ssrnat <> addn0 thm
+R4200:4204 mathcomp.ssreflect.ssrnat <> leqnn thm
+R4079:4090 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R4079:4090 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R4104:4110 mathcomp.ssreflect.bigop <> eq_bigr thm
+R4104:4110 mathcomp.ssreflect.bigop <> eq_bigr thm
+R4104:4110 mathcomp.ssreflect.bigop <> eq_bigr thm
+R4164:4176 mathcomp.ssreflect.bigop <> big_const_seq thm
+R4164:4176 mathcomp.ssreflect.bigop <> big_const_seq thm
+R4178:4186 mathcomp.ssreflect.ssrnat <> iter_addn thm
+R4178:4186 mathcomp.ssreflect.ssrnat <> iter_addn thm
+R4188:4192 mathcomp.ssreflect.ssrnat <> mul0n thm
+R4188:4192 mathcomp.ssreflect.ssrnat <> mul0n thm
+R4194:4198 mathcomp.ssreflect.ssrnat <> addn0 thm
+R4194:4198 mathcomp.ssreflect.ssrnat <> addn0 thm
+R4200:4204 mathcomp.ssreflect.ssrnat <> leqnn thm
+R4200:4204 mathcomp.ssreflect.ssrnat <> leqnn thm
+R4232:4236 mathcomp.ssreflect.ssrbool <> andbT thm
+R4232:4236 mathcomp.ssreflect.ssrbool <> andbT thm
+R4232:4236 mathcomp.ssreflect.ssrbool <> andbT thm
+R4248:4251 mathcomp.ssreflect.ssrbool <> andP thm
+R4280:4310 rt.model.basic.schedulability Schedulability service_after_job_deadline_zero thm
+R4342:4350 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R4280:4310 rt.model.basic.schedulability Schedulability service_after_job_deadline_zero thm
+R4280:4310 rt.model.basic.schedulability Schedulability service_after_job_deadline_zero thm
+R4342:4350 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R4395:4405 rt.model.basic.schedulability Schedulability.BasicLemmas.SpecificJob <> sec
+sec 4425:4431 Schedulability.BasicLemmas AllJobs
+var 4487:4489 Schedulability.BasicLemmas.AllJobs tsk
+R4492:4504 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sporadic_task var
+var 4573:4590 Schedulability.BasicLemmas.AllJobs no_deadline_misses
+R4601:4623 rt.model.basic.schedulability Schedulability task_misses_no_deadline def
+R4662:4664 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.tsk var
+R4656:4660 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sched var
+R4647:4654 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_task var
+R4634:4645 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_deadline var
+R4625:4632 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_cost var
+var 4738:4738 Schedulability.BasicLemmas.AllJobs j
+R4741:4745 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R4747:4753 rt.model.basic.schedulability <> Schedulability.BasicLemmas.arr_seq var
+var 4773:4785 Schedulability.BasicLemmas.AllJobs H_job_of_task
+R4798:4800 Coq.Init.Logic <> :type_scope:x_'='_x not
+R4788:4795 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_task var
+R4797:4797 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.j var
+R4801:4803 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.tsk var
+var 4823:4833 Schedulability.BasicLemmas.AllJobs H_valid_job
+R4844:4861 rt.model.basic.job Job valid_sporadic_job def
+R4918:4918 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.j var
+R4909:4916 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_task var
+R4896:4907 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_deadline var
+R4887:4894 rt.model.basic.schedulability <> Schedulability.BasicLemmas.job_cost var
+R4873:4885 rt.model.basic.schedulability <> Schedulability.BasicLemmas.task_deadline var
+R4863:4871 rt.model.basic.schedulability <> Schedulability.BasicLemmas.task_cost var
+prf 5022:5053 Schedulability service_after_task_deadline_zero
+R5125:5138 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R5160:5162 Coq.Init.Logic <> :type_scope:x_'='_x not
+R5139:5148 rt.model.basic.schedule Schedule service_at def
+R5158:5159 rt.model.basic.schedulability <> t' var
+R5156:5156 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.j var
+R5150:5154 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sched var
+R5088:5091 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>='_x not
+R5105:5107 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R5092:5102 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R5104:5104 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.j var
+R5108:5120 rt.model.basic.schedulability <> Schedulability.BasicLemmas.task_deadline var
+R5122:5124 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.tsk var
+R5086:5087 rt.model.basic.schedulability <> t' var
+R5226:5243 rt.model.basic.job Job valid_sporadic_job def
+R5284:5296 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.H_job_of_task var
+R5284:5296 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.H_job_of_task var
+R5284:5296 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.H_job_of_task var
+R5325:5355 rt.model.basic.schedulability Schedulability service_after_job_deadline_zero thm
+R5358:5375 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.no_deadline_misses var
+R5325:5355 rt.model.basic.schedulability Schedulability service_after_job_deadline_zero thm
+R5358:5375 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.no_deadline_misses var
+prf 5468:5510 Schedulability cumulative_service_after_task_deadline_zero
+R5586:5599 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R5641:5643 Coq.Init.Logic <> :type_scope:x_'='_x not
+R5600:5605 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5608:5611 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5613:5615 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5619:5620 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R5606:5607 rt.model.basic.schedulability <> t' var
+R5616:5618 rt.model.basic.schedulability <> t'' var
+R5621:5630 rt.model.basic.schedule Schedule service_at def
+R5638:5638 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.j var
+R5632:5636 rt.model.basic.schedulability <> Schedulability.BasicLemmas.sched var
+R5549:5552 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>='_x not
+R5566:5568 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R5553:5563 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R5565:5565 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.j var
+R5569:5581 rt.model.basic.schedulability <> Schedulability.BasicLemmas.task_deadline var
+R5583:5585 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.tsk var
+R5547:5548 rt.model.basic.schedulability <> t' var
+R5707:5724 rt.model.basic.job Job valid_sporadic_job def
+R5769:5781 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.H_job_of_task var
+R5769:5781 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.H_job_of_task var
+R5769:5781 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.H_job_of_task var
+R5810:5851 rt.model.basic.schedulability Schedulability cumulative_service_after_job_deadline_zero thm
+R5854:5871 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.no_deadline_misses var
+R5810:5851 rt.model.basic.schedulability Schedulability cumulative_service_after_job_deadline_zero thm
+R5854:5871 rt.model.basic.schedulability <> Schedulability.BasicLemmas.AllJobs.no_deadline_misses var
+R5900:5906 rt.model.basic.schedulability Schedulability.BasicLemmas.AllJobs <> sec
+R5916:5926 rt.model.basic.schedulability Schedulability.BasicLemmas <> sec
+R5934:5947 rt.model.basic.schedulability Schedulability <> mod

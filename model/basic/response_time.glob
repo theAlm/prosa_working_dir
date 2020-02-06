@@ -1,0 +1,301 @@
+DIGEST 88b9d628038cfb3a70d2fa2376d3a1a9
+Frt.model.basic.response_time
+R15:25 rt.util.all <> <> lib
+R43:61 rt.model.basic.task <> <> lib
+R63:80 rt.model.basic.job <> <> lib
+R82:108 rt.model.basic.task_arrival <> <> lib
+R125:147 rt.model.basic.schedule <> <> lib
+R179:187 mathcomp.ssreflect.ssreflect <> <> lib
+R189:195 mathcomp.ssreflect.ssrbool <> <> lib
+R197:202 mathcomp.ssreflect.eqtype <> <> lib
+R204:209 mathcomp.ssreflect.ssrnat <> <> lib
+R211:213 mathcomp.ssreflect.seq <> <> lib
+R215:221 mathcomp.ssreflect.fintype <> <> lib
+R223:227 mathcomp.ssreflect.bigop <> <> lib
+mod 302:313 <> ResponseTime
+sec 385:401 ResponseTime ResponseTimeBound
+R433:438 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R460:465 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R491:506 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R508:510 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.Job var
+var 527:534 ResponseTime.ResponseTimeBound job_cost
+R540:543 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R544:547 rt.model.basic.time Time time def
+R537:539 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.Job var
+var 563:570 ResponseTime.ResponseTimeBound job_task
+R576:579 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R580:592 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.sporadic_task var
+R573:575 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.Job var
+var 635:637 ResponseTime.ResponseTimeBound tsk
+R640:652 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.sporadic_task var
+R724:726 Coq.Init.Datatypes <> nat ind
+var 743:747 ResponseTime.ResponseTimeBound sched
+R750:757 rt.model.basic.schedule Schedule schedule def
+R768:774 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.arr_seq var
+R759:766 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.num_cpus var
+var 860:860 ResponseTime.ResponseTimeBound R
+R863:866 rt.model.basic.time Time time def
+var 878:897 ResponseTime.ResponseTimeBound job_has_completed_by
+R902:910 rt.model.basic.schedule Schedule completed def
+R921:925 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.sched var
+R912:919 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.job_cost var
+def 1049:1078 ResponseTime is_response_time_bound_of_task
+R1100:1104 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R1106:1112 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.arr_seq var
+R1140:1151 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1152:1171 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.job_has_completed_by var
+R1189:1191 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R1176:1186 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R1188:1188 rt.model.basic.response_time <> j var
+R1192:1192 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.R var
+R1173:1173 rt.model.basic.response_time <> j var
+R1134:1136 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1124:1131 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.job_task var
+R1133:1133 rt.model.basic.response_time <> j var
+R1137:1139 rt.model.basic.response_time <> ResponseTime.ResponseTimeBound.tsk var
+R1211:1227 rt.model.basic.response_time ResponseTime.ResponseTimeBound <> sec
+sec 1241:1251 ResponseTime BasicLemmas
+R1283:1288 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R1310:1315 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 1332:1339 ResponseTime.BasicLemmas job_cost
+R1345:1348 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1349:1352 rt.model.basic.time Time time def
+R1342:1344 rt.model.basic.response_time <> ResponseTime.BasicLemmas.Job var
+var 1368:1375 ResponseTime.BasicLemmas job_task
+R1381:1384 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1385:1397 rt.model.basic.response_time <> ResponseTime.BasicLemmas.sporadic_task var
+R1378:1380 rt.model.basic.response_time <> ResponseTime.BasicLemmas.Job var
+R1423:1438 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R1440:1442 rt.model.basic.response_time <> ResponseTime.BasicLemmas.Job var
+R1516:1518 Coq.Init.Datatypes <> nat ind
+var 1535:1539 ResponseTime.BasicLemmas sched
+R1542:1549 rt.model.basic.schedule Schedule schedule def
+R1560:1566 rt.model.basic.response_time <> ResponseTime.BasicLemmas.arr_seq var
+R1551:1558 rt.model.basic.response_time <> ResponseTime.BasicLemmas.num_cpus var
+var 1578:1597 ResponseTime.BasicLemmas job_has_completed_by
+R1602:1610 rt.model.basic.schedule Schedule completed def
+R1621:1625 rt.model.basic.response_time <> ResponseTime.BasicLemmas.sched var
+R1612:1619 rt.model.basic.response_time <> ResponseTime.BasicLemmas.job_cost var
+var 1700:1728 ResponseTime.BasicLemmas H_completed_jobs_dont_execute
+R1737:1763 rt.model.basic.schedule Schedule completed_jobs_dont_execute def
+R1774:1778 rt.model.basic.response_time <> ResponseTime.BasicLemmas.sched var
+R1765:1772 rt.model.basic.response_time <> ResponseTime.BasicLemmas.job_cost var
+sec 1794:1804 ResponseTime.BasicLemmas SpecificJob
+var 1858:1858 ResponseTime.BasicLemmas.SpecificJob j
+R1861:1865 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R1867:1873 rt.model.basic.response_time <> ResponseTime.BasicLemmas.arr_seq var
+var 1962:1962 ResponseTime.BasicLemmas.SpecificJob R
+R1965:1968 rt.model.basic.time Time time def
+var 1988:2006 ResponseTime.BasicLemmas.SpecificJob response_time_bound
+R2017:2036 rt.model.basic.response_time <> ResponseTime.BasicLemmas.job_has_completed_by var
+R2054:2056 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R2041:2051 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R2053:2053 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2057:2057 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.R var
+R2038:2038 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+prf 2158:2182 ResponseTime service_after_job_rt_zero
+R2238:2251 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2273:2275 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2252:2261 rt.model.basic.schedule Schedule service_at def
+R2271:2272 rt.model.basic.response_time <> t' var
+R2269:2269 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2263:2267 rt.model.basic.response_time <> ResponseTime.BasicLemmas.sched var
+R2217:2220 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>='_x not
+R2234:2236 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R2221:2231 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R2233:2233 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2237:2237 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.R var
+R2215:2216 rt.model.basic.response_time <> t' var
+R2412:2441 rt.model.basic.response_time ResponseTime is_response_time_bound_of_task def
+R2444:2452 rt.model.basic.schedule Schedule completed def
+R2470:2496 rt.model.basic.schedule Schedule completed_jobs_dont_execute def
+R2518:2520 mathcomp.ssreflect.eqtype <> eqP thm
+R2532:2536 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R2518:2520 mathcomp.ssreflect.eqtype <> eqP thm
+R2532:2536 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R2532:2536 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R2579:2586 rt.model.basic.response_time <> ResponseTime.BasicLemmas.job_cost var
+R2588:2588 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2558:2566 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R2579:2586 rt.model.basic.response_time <> ResponseTime.BasicLemmas.job_cost var
+R2588:2588 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2558:2566 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R2579:2586 rt.model.basic.response_time <> ResponseTime.BasicLemmas.job_cost var
+R2588:2588 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2558:2566 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R2636:2640 mathcomp.ssreflect.ssrnat <> addn0 thm
+R2613:2615 mathcomp.ssreflect.eqtype <> eqP thm
+R2636:2640 mathcomp.ssreflect.ssrnat <> addn0 thm
+R2636:2640 mathcomp.ssreflect.ssrnat <> addn0 thm
+R2678:2684 rt.model.basic.schedule Schedule service def
+R2696:2698 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R2692:2692 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2686:2690 rt.model.basic.response_time <> ResponseTime.BasicLemmas.sched var
+R2657:2665 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R2678:2684 rt.model.basic.schedule Schedule service def
+R2696:2698 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R2692:2692 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2686:2690 rt.model.basic.response_time <> ResponseTime.BasicLemmas.sched var
+R2657:2665 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R2747:2753 rt.model.basic.schedule Schedule service def
+R2827:2829 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R2851:2853 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R2838:2848 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R2850:2850 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2854:2854 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.R var
+R2767:2777 mathcomp.ssreflect.bigop <> big_cat_nat thm
+R2879:2887 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R2912:2915 mathcomp.ssreflect.ssrnat <> ltnW thm
+R2827:2829 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R2851:2853 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R2838:2848 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R2850:2850 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2854:2854 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.R var
+R2767:2777 mathcomp.ssreflect.bigop <> big_cat_nat thm
+R2827:2829 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R2851:2853 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R2838:2848 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R2850:2850 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2854:2854 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.R var
+R2767:2777 mathcomp.ssreflect.bigop <> big_cat_nat thm
+R2827:2829 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R2851:2853 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R2838:2848 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R2850:2850 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2854:2854 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.R var
+R2767:2777 mathcomp.ssreflect.bigop <> big_cat_nat thm
+R2827:2829 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R2851:2853 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R2838:2848 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R2850:2850 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R2854:2854 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.R var
+R2767:2777 mathcomp.ssreflect.bigop <> big_cat_nat thm
+R2879:2887 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R2879:2887 mathcomp.ssreflect.ssrnat <> leq_add2l thm
+R2912:2915 mathcomp.ssreflect.ssrnat <> ltnW thm
+R2940:2951 mathcomp.ssreflect.bigop <> big_nat_recr thm
+R2966:2973 mathcomp.ssreflect.ssrnat <> leq_addl thm
+R2940:2951 mathcomp.ssreflect.bigop <> big_nat_recr thm
+R2940:2951 mathcomp.ssreflect.bigop <> big_nat_recr thm
+R2966:2973 mathcomp.ssreflect.ssrnat <> leq_addl thm
+prf 3066:3101 ResponseTime cumulative_service_after_job_rt_zero
+R3161:3174 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3216:3218 Coq.Init.Logic <> :type_scope:x_'='_x not
+R3175:3180 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R3183:3186 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R3188:3190 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R3194:3195 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R3181:3182 rt.model.basic.response_time <> t' var
+R3191:3193 rt.model.basic.response_time <> t'' var
+R3196:3205 rt.model.basic.schedule Schedule service_at def
+R3213:3213 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R3207:3211 rt.model.basic.response_time <> ResponseTime.BasicLemmas.sched var
+R3140:3143 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>='_x not
+R3157:3159 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R3144:3154 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R3156:3156 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.j var
+R3160:3160 rt.model.basic.response_time <> ResponseTime.BasicLemmas.SpecificJob.R var
+R3138:3139 rt.model.basic.response_time <> t' var
+R3254:3256 mathcomp.ssreflect.eqtype <> eqP thm
+R3268:3272 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R3254:3256 mathcomp.ssreflect.eqtype <> eqP thm
+R3268:3272 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R3268:3272 mathcomp.ssreflect.ssrnat <> leqn0 thm
+R3291:3302 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R3316:3322 mathcomp.ssreflect.bigop <> eq_bigr thm
+R3376:3388 mathcomp.ssreflect.bigop <> big_const_seq thm
+R3390:3398 mathcomp.ssreflect.ssrnat <> iter_addn thm
+R3400:3404 mathcomp.ssreflect.ssrnat <> mul0n thm
+R3406:3410 mathcomp.ssreflect.ssrnat <> addn0 thm
+R3412:3416 mathcomp.ssreflect.ssrnat <> leqnn thm
+R3291:3302 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R3291:3302 mathcomp.ssreflect.bigop <> big_nat_cond thm
+R3316:3322 mathcomp.ssreflect.bigop <> eq_bigr thm
+R3316:3322 mathcomp.ssreflect.bigop <> eq_bigr thm
+R3316:3322 mathcomp.ssreflect.bigop <> eq_bigr thm
+R3376:3388 mathcomp.ssreflect.bigop <> big_const_seq thm
+R3376:3388 mathcomp.ssreflect.bigop <> big_const_seq thm
+R3390:3398 mathcomp.ssreflect.ssrnat <> iter_addn thm
+R3390:3398 mathcomp.ssreflect.ssrnat <> iter_addn thm
+R3400:3404 mathcomp.ssreflect.ssrnat <> mul0n thm
+R3400:3404 mathcomp.ssreflect.ssrnat <> mul0n thm
+R3406:3410 mathcomp.ssreflect.ssrnat <> addn0 thm
+R3406:3410 mathcomp.ssreflect.ssrnat <> addn0 thm
+R3412:3416 mathcomp.ssreflect.ssrnat <> leqnn thm
+R3412:3416 mathcomp.ssreflect.ssrnat <> leqnn thm
+R3444:3448 mathcomp.ssreflect.ssrbool <> andbT thm
+R3444:3448 mathcomp.ssreflect.ssrbool <> andbT thm
+R3444:3448 mathcomp.ssreflect.ssrbool <> andbT thm
+R3460:3463 mathcomp.ssreflect.ssrbool <> andP thm
+R3492:3516 rt.model.basic.response_time ResponseTime service_after_job_rt_zero thm
+R3548:3556 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R3492:3516 rt.model.basic.response_time ResponseTime service_after_job_rt_zero thm
+R3492:3516 rt.model.basic.response_time ResponseTime service_after_job_rt_zero thm
+R3548:3556 mathcomp.ssreflect.ssrnat <> leq_trans thm
+R3601:3611 rt.model.basic.response_time ResponseTime.BasicLemmas.SpecificJob <> sec
+sec 3631:3637 ResponseTime.BasicLemmas AllJobs
+var 3693:3695 ResponseTime.BasicLemmas.AllJobs tsk
+R3698:3710 rt.model.basic.response_time <> ResponseTime.BasicLemmas.sporadic_task var
+var 3789:3789 ResponseTime.BasicLemmas.AllJobs R
+R3792:3795 rt.model.basic.time Time time def
+var 3815:3833 ResponseTime.BasicLemmas.AllJobs response_time_bound
+R3844:3873 rt.model.basic.response_time ResponseTime is_response_time_bound_of_task def
+R3903:3903 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.R var
+R3897:3901 rt.model.basic.response_time <> ResponseTime.BasicLemmas.sched var
+R3893:3895 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.tsk var
+R3884:3891 rt.model.basic.response_time <> ResponseTime.BasicLemmas.job_task var
+R3875:3882 rt.model.basic.response_time <> ResponseTime.BasicLemmas.job_cost var
+var 3971:3971 ResponseTime.BasicLemmas.AllJobs j
+R3974:3978 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R3980:3986 rt.model.basic.response_time <> ResponseTime.BasicLemmas.arr_seq var
+var 4006:4018 ResponseTime.BasicLemmas.AllJobs H_job_of_task
+R4031:4033 Coq.Init.Logic <> :type_scope:x_'='_x not
+R4021:4028 rt.model.basic.response_time <> ResponseTime.BasicLemmas.job_task var
+R4030:4030 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.j var
+R4034:4036 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.tsk var
+prf 4139:4164 ResponseTime service_after_task_rt_zero
+R4220:4233 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R4255:4257 Coq.Init.Logic <> :type_scope:x_'='_x not
+R4234:4243 rt.model.basic.schedule Schedule service_at def
+R4253:4254 rt.model.basic.response_time <> t' var
+R4251:4251 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.j var
+R4245:4249 rt.model.basic.response_time <> ResponseTime.BasicLemmas.sched var
+R4199:4202 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>='_x not
+R4216:4218 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R4203:4213 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R4215:4215 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.j var
+R4219:4219 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.R var
+R4197:4198 rt.model.basic.response_time <> t' var
+R4333:4333 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.R var
+R4296:4320 rt.model.basic.response_time ResponseTime service_after_job_rt_zero thm
+R4344:4362 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.response_time_bound var
+R4333:4333 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.R var
+R4296:4320 rt.model.basic.response_time ResponseTime service_after_job_rt_zero thm
+R4344:4362 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.response_time_bound var
+prf 4458:4494 ResponseTime cumulative_service_after_task_rt_zero
+R4554:4567 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R4609:4611 Coq.Init.Logic <> :type_scope:x_'='_x not
+R4568:4573 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R4576:4579 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R4581:4583 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R4587:4588 mathcomp.ssreflect.bigop <> :nat_scope:'\sum_'_'('_x_'<='_x_'<'_x_')'_x not
+R4574:4575 rt.model.basic.response_time <> t' var
+R4584:4586 rt.model.basic.response_time <> t'' var
+R4589:4598 rt.model.basic.schedule Schedule service_at def
+R4606:4606 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.j var
+R4600:4604 rt.model.basic.response_time <> ResponseTime.BasicLemmas.sched var
+R4533:4536 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>='_x not
+R4550:4552 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R4537:4547 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R4549:4549 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.j var
+R4553:4553 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.R var
+R4531:4532 rt.model.basic.response_time <> t' var
+R4698:4698 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.R var
+R4650:4685 rt.model.basic.response_time ResponseTime cumulative_service_after_job_rt_zero thm
+R4727:4745 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.response_time_bound var
+R4698:4698 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.R var
+R4650:4685 rt.model.basic.response_time ResponseTime cumulative_service_after_job_rt_zero thm
+R4727:4745 rt.model.basic.response_time <> ResponseTime.BasicLemmas.AllJobs.response_time_bound var
+R4775:4781 rt.model.basic.response_time ResponseTime.BasicLemmas.AllJobs <> sec
+R4791:4801 rt.model.basic.response_time ResponseTime.BasicLemmas <> sec
+R4813:4824 rt.model.basic.response_time ResponseTime <> mod

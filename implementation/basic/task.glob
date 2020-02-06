@@ -1,0 +1,102 @@
+DIGEST 02bf5af083b107a5fa5564438f58e1ce
+Frt.implementation.basic.task
+R15:33 rt.model.basic.time <> <> lib
+R35:45 rt.util.all <> <> lib
+R63:81 rt.model.basic.task <> <> lib
+R113:121 mathcomp.ssreflect.ssreflect <> <> lib
+R123:129 mathcomp.ssreflect.ssrbool <> <> lib
+R131:136 mathcomp.ssreflect.ssrnat <> <> lib
+R138:143 mathcomp.ssreflect.eqtype <> <> lib
+R145:147 mathcomp.ssreflect.seq <> <> lib
+mod 158:169 <> ConcreteTask
+sec 217:220 ConcreteTask Defs
+rec 280:292 ConcreteTask concrete_task
+proj 309:315 ConcreteTask task_id
+proj 352:360 ConcreteTask task_cost
+proj 375:385 ConcreteTask task_period
+proj 400:412 ConcreteTask task_deadline
+R318:320 Coq.Init.Datatypes <> nat ind
+R363:366 rt.model.basic.time Time time def
+R388:391 rt.model.basic.time Time time def
+R415:418 rt.model.basic.time Time time def
+def 564:573 ConcreteTask task_eqdef
+R583:595 rt.implementation.basic.task ConcreteTask concrete_task rec
+R717:727 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R764:764 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R673:683 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R716:716 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R607:607 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R632:643 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R672:672 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R618:621 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R608:614 rt.implementation.basic.task ConcreteTask task_id proj
+R616:617 rt.implementation.basic.task <> t1 var
+R622:628 rt.implementation.basic.task ConcreteTask task_id proj
+R630:631 rt.implementation.basic.task <> t2 var
+R656:659 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R644:652 rt.implementation.basic.task ConcreteTask task_cost proj
+R654:655 rt.implementation.basic.task <> t1 var
+R660:668 rt.implementation.basic.task ConcreteTask task_cost proj
+R670:671 rt.implementation.basic.task <> t2 var
+R698:701 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R684:694 rt.implementation.basic.task ConcreteTask task_period proj
+R696:697 rt.implementation.basic.task <> t1 var
+R702:712 rt.implementation.basic.task ConcreteTask task_period proj
+R714:715 rt.implementation.basic.task <> t2 var
+R744:747 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R728:740 rt.implementation.basic.task ConcreteTask task_deadline proj
+R742:743 rt.implementation.basic.task <> t1 var
+R748:760 rt.implementation.basic.task ConcreteTask task_deadline proj
+R762:763 rt.implementation.basic.task <> t2 var
+prf 846:853 ConcreteTask eqn_task
+R857:870 mathcomp.ssreflect.eqtype Equality axiom def
+R872:881 rt.implementation.basic.task ConcreteTask task_eqdef def
+R908:921 mathcomp.ssreflect.eqtype Equality axiom def
+R952:961 rt.implementation.basic.task ConcreteTask task_eqdef def
+R952:961 rt.implementation.basic.task ConcreteTask task_eqdef def
+R998:1005 mathcomp.ssreflect.ssrbool <> ReflectT constr
+R998:1005 mathcomp.ssreflect.ssrbool <> ReflectT constr
+R1023:1032 rt.implementation.basic.task ConcreteTask task_eqdef def
+R1061:1064 mathcomp.ssreflect.ssrbool <> andP thm
+R1068:1071 mathcomp.ssreflect.ssrbool <> andP thm
+R1075:1078 mathcomp.ssreflect.ssrbool <> andP thm
+R1082:1084 mathcomp.ssreflect.eqtype <> eqP thm
+R1090:1092 mathcomp.ssreflect.eqtype <> eqP thm
+R1101:1103 mathcomp.ssreflect.eqtype <> eqP thm
+R1114:1116 mathcomp.ssreflect.eqtype <> eqP thm
+R1199:1206 mathcomp.ssreflect.ssrbool <> ReflectF constr
+R1199:1206 mathcomp.ssreflect.ssrbool <> ReflectF constr
+R1224:1233 rt.implementation.basic.task ConcreteTask task_eqdef def
+R1236:1238 Coq.Init.Logic <> not def
+R1271:1275 mathcomp.ssreflect.ssrbool <> negbT thm
+R1292:1299 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1271:1275 mathcomp.ssreflect.ssrbool <> negbT thm
+R1292:1299 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1292:1299 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1347:1354 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1347:1354 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1347:1354 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1384:1386 mathcomp.ssreflect.ssrbool <> orP thm
+R1395:1397 mathcomp.ssreflect.eqtype <> eqP thm
+R1458:1460 mathcomp.ssreflect.ssrbool <> orP thm
+R1469:1471 mathcomp.ssreflect.eqtype <> eqP thm
+R1498:1505 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1498:1505 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1498:1505 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1535:1537 mathcomp.ssreflect.ssrbool <> orP thm
+R1541:1543 mathcomp.ssreflect.eqtype <> eqP thm
+R1551:1553 mathcomp.ssreflect.eqtype <> eqP thm
+def 0:-1 ConcreteTask concrete_task_eqMixin
+R1800:1806 mathcomp.ssreflect.eqtype Equality.Exports EqMixin syndef
+R1808:1815 rt.implementation.basic.task ConcreteTask eqn_task thm
+def 0:-1 ConcreteTask concrete_task_eqType
+R1868:1873 mathcomp.ssreflect.eqtype Equality.Exports EqType syndef
+R1875:1887 rt.implementation.basic.task ConcreteTask concrete_task rec
+R1889:1909 rt.implementation.basic.task ConcreteTask concrete_task_eqMixin canonstruc
+R1919:1922 rt.implementation.basic.task ConcreteTask.Defs <> sec
+sec 1936:1950 ConcreteTask ConcreteTaskset
+def 1969:1984 ConcreteTask concrete_taskset
+R1995:2004 rt.model.basic.task SporadicTaskset taskset_of def
+R2006:2025 rt.implementation.basic.task ConcreteTask concrete_task_eqType canonstruc
+R2035:2049 rt.implementation.basic.task ConcreteTask.ConcreteTaskset <> sec
+R2059:2070 rt.implementation.basic.task ConcreteTask <> mod

@@ -1,0 +1,103 @@
+DIGEST b200ac84aace7090a6681d66a9c49115
+Frt.model.basic.job
+R15:33 rt.model.basic.time <> <> lib
+R35:53 rt.model.basic.task <> <> lib
+R85:90 mathcomp.ssreflect.ssrnat <> <> lib
+R92:98 mathcomp.ssreflect.ssrbool <> <> lib
+R100:105 mathcomp.ssreflect.eqtype <> <> lib
+mod 162:164 <> Job
+sec 217:224 Job ValidJob
+R246:251 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 268:275 Job.ValidJob job_cost
+R281:284 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R285:288 rt.model.basic.time Time time def
+R278:280 rt.model.basic.job <> Job.ValidJob.Job var
+var 305:305 Job.ValidJob j
+R308:310 rt.model.basic.job <> Job.ValidJob.Job var
+def 370:386 Job job_cost_positive
+R392:394 rt.model.basic.job <> Job.ValidJob.Job var
+R410:412 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>'_x not
+R400:407 rt.model.basic.job <> Job.ValidJob.job_cost var
+R409:409 rt.model.basic.job <> j var
+R423:430 rt.model.basic.job Job.ValidJob <> sec
+sec 487:502 Job ValidRealtimeJob
+R524:529 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 546:553 Job.ValidRealtimeJob job_cost
+R559:562 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R563:566 rt.model.basic.time Time time def
+R556:558 rt.model.basic.job <> Job.ValidRealtimeJob.Job var
+var 582:593 Job.ValidRealtimeJob job_deadline
+R599:602 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R603:606 rt.model.basic.time Time time def
+R596:598 rt.model.basic.job <> Job.ValidRealtimeJob.Job var
+var 627:627 Job.ValidRealtimeJob j
+R630:632 rt.model.basic.job <> Job.ValidRealtimeJob.Job var
+def 722:742 Job job_deadline_positive
+R761:763 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'>'_x not
+R747:758 rt.model.basic.job <> Job.ValidRealtimeJob.job_deadline var
+R760:760 rt.model.basic.job <> Job.ValidRealtimeJob.j var
+def 782:801 Job job_cost_le_deadline
+R816:819 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R806:813 rt.model.basic.job <> Job.ValidRealtimeJob.job_cost var
+R815:815 rt.model.basic.job <> Job.ValidRealtimeJob.j var
+R820:831 rt.model.basic.job <> Job.ValidRealtimeJob.job_deadline var
+R833:833 rt.model.basic.job <> Job.ValidRealtimeJob.j var
+def 860:877 Job valid_realtime_job
+R916:925 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R888:904 rt.model.basic.job Job job_cost_positive def
+R915:915 rt.model.basic.job <> Job.ValidRealtimeJob.j var
+R906:913 rt.model.basic.job <> Job.ValidRealtimeJob.job_cost var
+R946:955 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R926:945 rt.model.basic.job Job job_cost_le_deadline def
+R956:976 rt.model.basic.job Job job_deadline_positive def
+R986:1001 rt.model.basic.job Job.ValidRealtimeJob <> sec
+sec 1047:1066 Job ValidSporadicTaskJob
+R1098:1103 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 1120:1128 Job.ValidSporadicTaskJob task_cost
+R1144:1147 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1148:1151 rt.model.basic.time Time time def
+R1131:1143 rt.model.basic.job <> Job.ValidSporadicTaskJob.sporadic_task var
+var 1167:1179 Job.ValidSporadicTaskJob task_deadline
+R1195:1198 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1199:1202 rt.model.basic.time Time time def
+R1182:1194 rt.model.basic.job <> Job.ValidSporadicTaskJob.sporadic_task var
+R1228:1233 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 1250:1257 Job.ValidSporadicTaskJob job_cost
+R1263:1266 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1267:1270 rt.model.basic.time Time time def
+R1260:1262 rt.model.basic.job <> Job.ValidSporadicTaskJob.Job var
+var 1286:1297 Job.ValidSporadicTaskJob job_deadline
+R1303:1306 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1307:1310 rt.model.basic.time Time time def
+R1300:1302 rt.model.basic.job <> Job.ValidSporadicTaskJob.Job var
+var 1326:1333 Job.ValidSporadicTaskJob job_task
+R1339:1342 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1343:1355 rt.model.basic.job <> Job.ValidSporadicTaskJob.sporadic_task var
+R1336:1338 rt.model.basic.job <> Job.ValidSporadicTaskJob.Job var
+var 1376:1376 Job.ValidSporadicTaskJob j
+R1379:1381 rt.model.basic.job <> Job.ValidSporadicTaskJob.Job var
+def 1460:1480 Job job_cost_le_task_cost
+R1501:1504 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R1491:1498 rt.model.basic.job <> Job.ValidSporadicTaskJob.job_cost var
+R1500:1500 rt.model.basic.job <> Job.ValidSporadicTaskJob.j var
+R1505:1513 rt.model.basic.job <> Job.ValidSporadicTaskJob.task_cost var
+R1516:1523 rt.model.basic.job <> Job.ValidSporadicTaskJob.job_task var
+R1525:1525 rt.model.basic.job <> Job.ValidSporadicTaskJob.j var
+def 1608:1636 Job job_deadline_eq_task_deadline
+R1661:1663 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1647:1658 rt.model.basic.job <> Job.ValidSporadicTaskJob.job_deadline var
+R1660:1660 rt.model.basic.job <> Job.ValidSporadicTaskJob.j var
+R1664:1676 rt.model.basic.job <> Job.ValidSporadicTaskJob.task_deadline var
+R1679:1686 rt.model.basic.job <> Job.ValidSporadicTaskJob.job_task var
+R1688:1688 rt.model.basic.job <> Job.ValidSporadicTaskJob.j var
+def 1708:1725 Job valid_sporadic_job
+R1778:1787 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R1736:1753 rt.model.basic.job Job valid_realtime_job def
+R1777:1777 rt.model.basic.job <> Job.ValidSporadicTaskJob.j var
+R1764:1775 rt.model.basic.job <> Job.ValidSporadicTaskJob.job_deadline var
+R1755:1762 rt.model.basic.job <> Job.ValidSporadicTaskJob.job_cost var
+R1809:1818 Coq.Init.Logic <> :type_scope:x_'/\'_x not
+R1788:1808 rt.model.basic.job Job job_cost_le_task_cost def
+R1819:1847 rt.model.basic.job Job job_deadline_eq_task_deadline def
+R1857:1876 rt.model.basic.job Job.ValidSporadicTaskJob <> sec
+R1884:1886 rt.model.basic.job Job <> mod

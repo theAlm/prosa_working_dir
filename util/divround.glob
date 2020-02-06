@@ -1,0 +1,24 @@
+DIGEST cefd2f37bea5334eba1a94f94ce10518
+Frt.util.divround
+R29:35 mathcomp.ssreflect.ssrbool <> <> lib
+R37:42 mathcomp.ssreflect.ssrnat <> <> lib
+R44:46 mathcomp.ssreflect.div <> <> lib
+def 61:69 <> div_floor
+R77:79 Coq.Init.Datatypes <> nat ind
+R84:86 Coq.Init.Datatypes <> nat ind
+R92:95 mathcomp.ssreflect.div <> :nat_scope:x_'%/'_x not
+R91:91 rt.util.divround <> x var
+R96:96 rt.util.divround <> y var
+def 110:117 <> div_ceil
+R125:127 Coq.Init.Datatypes <> nat ind
+R137:140 mathcomp.ssreflect.div <> :nat_scope:x_'%|'_x not
+R136:136 rt.util.divround <> y var
+R141:141 rt.util.divround <> x var
+R160:160 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R167:170 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R162:165 mathcomp.ssreflect.div <> :nat_scope:x_'%/'_x not
+R161:161 rt.util.divround <> x var
+R166:166 rt.util.divround <> y var
+R149:152 mathcomp.ssreflect.div <> :nat_scope:x_'%/'_x not
+R148:148 rt.util.divround <> x var
+R153:153 rt.util.divround <> y var

@@ -1,0 +1,2 @@
+util/all.vo util/all.glob util/all.v.beautified: util/all.v util/tactics.vo util/notation.vo util/bigcat.vo util/bigord.vo util/counting.vo util/divround.vo util/exists.vo util/fixedpoint.vo util/induction.vo util/list.vo util/nat.vo util/powerset.vo util/sorting.vo util/ssromega.vo util/sum.vo
+util/all.vio: util/all.v util/tactics.vio util/notation.vio util/bigcat.vio util/bigord.vio util/counting.vio util/divround.vio util/exists.vio util/fixedpoint.vio util/induction.vio util/list.vio util/nat.vio util/powerset.vio util/sorting.vio util/ssromega.vio util/sum.vio

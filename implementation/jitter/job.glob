@@ -1,0 +1,112 @@
+DIGEST 56d8c6c36ecf46d566dba775345ad7ba
+Frt.implementation.jitter.job
+R15:25 rt.util.all <> <> lib
+R43:71 rt.implementation.jitter.task <> <> lib
+R103:111 mathcomp.ssreflect.ssreflect <> <> lib
+R113:119 mathcomp.ssreflect.ssrbool <> <> lib
+R121:126 mathcomp.ssreflect.ssrnat <> <> lib
+R128:133 mathcomp.ssreflect.eqtype <> <> lib
+R135:137 mathcomp.ssreflect.seq <> <> lib
+mod 148:158 <> ConcreteJob
+sec 196:199 ConcreteJob Defs
+rec 255:266 ConcreteJob concrete_job
+proj 283:288 ConcreteJob job_id
+proj 302:309 ConcreteJob job_cost
+proj 323:334 ConcreteJob job_deadline
+proj 348:357 ConcreteJob job_jitter
+proj 371:378 ConcreteJob job_task
+R291:293 Coq.Init.Datatypes <> nat ind
+R312:314 Coq.Init.Datatypes <> nat ind
+R337:339 Coq.Init.Datatypes <> nat ind
+R360:362 Coq.Init.Datatypes <> nat ind
+R381:400 rt.implementation.jitter.task ConcreteTask concrete_task_eqType canonstruc
+def 530:538 ConcreteJob job_eqdef
+R548:559 rt.implementation.jitter.job ConcreteJob concrete_job rec
+R721:731 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R758:758 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R679:689 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R720:720 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R633:643 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R678:678 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R571:571 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R594:605 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R632:632 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R581:584 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R572:577 rt.implementation.jitter.job ConcreteJob job_id proj
+R579:580 rt.implementation.jitter.job <> j1 var
+R585:590 rt.implementation.jitter.job ConcreteJob job_id proj
+R592:593 rt.implementation.jitter.job <> j2 var
+R617:620 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R606:613 rt.implementation.jitter.job ConcreteJob job_cost proj
+R615:616 rt.implementation.jitter.job <> j1 var
+R621:628 rt.implementation.jitter.job ConcreteJob job_cost proj
+R630:631 rt.implementation.jitter.job <> j2 var
+R659:662 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R644:655 rt.implementation.jitter.job ConcreteJob job_deadline proj
+R657:658 rt.implementation.jitter.job <> j1 var
+R663:674 rt.implementation.jitter.job ConcreteJob job_deadline proj
+R676:677 rt.implementation.jitter.job <> j2 var
+R703:706 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R690:699 rt.implementation.jitter.job ConcreteJob job_jitter proj
+R701:702 rt.implementation.jitter.job <> j1 var
+R707:716 rt.implementation.jitter.job ConcreteJob job_jitter proj
+R718:719 rt.implementation.jitter.job <> j2 var
+R743:746 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R732:739 rt.implementation.jitter.job ConcreteJob job_task proj
+R741:742 rt.implementation.jitter.job <> j1 var
+R747:754 rt.implementation.jitter.job ConcreteJob job_task proj
+R756:757 rt.implementation.jitter.job <> j2 var
+prf 839:845 ConcreteJob eqn_job
+R849:862 mathcomp.ssreflect.eqtype Equality axiom def
+R864:872 rt.implementation.jitter.job ConcreteJob job_eqdef def
+R899:912 mathcomp.ssreflect.eqtype Equality axiom def
+R943:951 rt.implementation.jitter.job ConcreteJob job_eqdef def
+R943:951 rt.implementation.jitter.job ConcreteJob job_eqdef def
+R988:995 mathcomp.ssreflect.ssrbool <> ReflectT constr
+R1005:1013 rt.implementation.jitter.job ConcreteJob job_eqdef def
+R988:995 mathcomp.ssreflect.ssrbool <> ReflectT constr
+R1042:1045 mathcomp.ssreflect.ssrbool <> andP thm
+R1049:1052 mathcomp.ssreflect.ssrbool <> andP thm
+R1056:1059 mathcomp.ssreflect.ssrbool <> andP thm
+R1063:1066 mathcomp.ssreflect.ssrbool <> andP thm
+R1070:1072 mathcomp.ssreflect.eqtype <> eqP thm
+R1078:1080 mathcomp.ssreflect.eqtype <> eqP thm
+R1089:1091 mathcomp.ssreflect.eqtype <> eqP thm
+R1098:1100 mathcomp.ssreflect.eqtype <> eqP thm
+R1111:1113 mathcomp.ssreflect.eqtype <> eqP thm
+R1197:1204 mathcomp.ssreflect.ssrbool <> ReflectF constr
+R1197:1204 mathcomp.ssreflect.ssrbool <> ReflectF constr
+R1222:1230 rt.implementation.jitter.job ConcreteJob job_eqdef def
+R1233:1235 Coq.Init.Logic <> not def
+R1268:1272 mathcomp.ssreflect.ssrbool <> negbT thm
+R1289:1296 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1268:1272 mathcomp.ssreflect.ssrbool <> negbT thm
+R1289:1296 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1289:1296 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1344:1351 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1344:1351 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1344:1351 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1381:1383 mathcomp.ssreflect.ssrbool <> orP thm
+R1392:1394 mathcomp.ssreflect.eqtype <> eqP thm
+R1459:1461 mathcomp.ssreflect.ssrbool <> orP thm
+R1470:1472 mathcomp.ssreflect.eqtype <> eqP thm
+R1536:1543 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1536:1543 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1536:1543 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1573:1575 mathcomp.ssreflect.ssrbool <> orP thm
+R1584:1586 mathcomp.ssreflect.eqtype <> eqP thm
+R1642:1649 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1642:1649 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1642:1649 mathcomp.ssreflect.ssrbool <> negb_and thm
+R1679:1681 mathcomp.ssreflect.ssrbool <> orP thm
+R1685:1687 mathcomp.ssreflect.eqtype <> eqP thm
+R1695:1697 mathcomp.ssreflect.eqtype <> eqP thm
+def 0:-1 ConcreteJob concrete_job_eqMixin
+R1900:1906 mathcomp.ssreflect.eqtype Equality.Exports EqMixin syndef
+R1908:1914 rt.implementation.jitter.job ConcreteJob eqn_job thm
+def 0:-1 ConcreteJob concrete_job_eqType
+R1966:1971 mathcomp.ssreflect.eqtype Equality.Exports EqType syndef
+R1973:1984 rt.implementation.jitter.job ConcreteJob concrete_job rec
+R1986:2005 rt.implementation.jitter.job ConcreteJob concrete_job_eqMixin canonstruc
+R2016:2019 rt.implementation.jitter.job ConcreteJob.Defs <> sec
+R2031:2041 rt.implementation.jitter.job ConcreteJob <> mod

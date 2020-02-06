@@ -1,0 +1,93 @@
+DIGEST eab153a165ed72d5aeb5ee111e3f96e7
+Frt.analysis.jitter.interference_bound
+R15:25 rt.util.all <> <> lib
+R43:74 rt.model.jitter.arrival_sequence <> <> lib
+R76:99 rt.model.jitter.schedule <> <> lib
+R116:143 rt.model.jitter.interference <> <> lib
+R145:168 rt.model.jitter.priority <> <> lib
+R186:218 rt.analysis.jitter.workload_bound <> <> lib
+R250:258 mathcomp.ssreflect.ssreflect <> <> lib
+R260:266 mathcomp.ssreflect.ssrbool <> <> lib
+R268:273 mathcomp.ssreflect.eqtype <> <> lib
+R275:280 mathcomp.ssreflect.ssrnat <> <> lib
+R282:284 mathcomp.ssreflect.seq <> <> lib
+R286:292 mathcomp.ssreflect.fintype <> <> lib
+R294:298 mathcomp.ssreflect.bigop <> <> lib
+mod 309:331 <> InterferenceBoundJitter
+sec 414:424 InterferenceBoundJitter Definitions
+R460:465 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 482:490 InterferenceBoundJitter.Definitions task_cost
+R506:509 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R510:513 rt.model.basic.time Time time def
+R493:505 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.sporadic_task var
+var 529:539 InterferenceBoundJitter.Definitions task_period
+R555:558 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R559:562 rt.model.basic.time Time time def
+R542:554 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.sporadic_task var
+var 578:590 InterferenceBoundJitter.Definitions task_deadline
+R606:609 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R610:613 rt.model.basic.time Time time def
+R593:605 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.sporadic_task var
+var 629:639 InterferenceBoundJitter.Definitions task_jitter
+R655:658 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R659:662 rt.model.basic.time Time time def
+R642:654 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.sporadic_task var
+var 729:731 InterferenceBoundJitter.Definitions tsk
+R734:746 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.sporadic_task var
+var 758:780 InterferenceBoundJitter.Definitions task_with_response_time
+R799:801 Coq.Init.Datatypes <> :type_scope:x_'*'_x not
+R786:798 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.sporadic_task var
+R802:805 rt.model.basic.time Time time def
+var 907:912 InterferenceBoundJitter.Definitions R_prev
+R915:917 mathcomp.ssreflect.seq <> seq syndef
+R919:941 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.task_with_response_time var
+var 1002:1006 InterferenceBoundJitter.Definitions delta
+R1009:1012 rt.model.basic.time Time time def
+sec 1028:1034 InterferenceBoundJitter.Definitions PerTask
+var 1053:1057 InterferenceBoundJitter.Definitions.PerTask tsk_R
+R1060:1082 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.task_with_response_time var
+var 1095:1103 InterferenceBoundJitter.Definitions.PerTask tsk_other
+R1108:1110 Coq.Init.Datatypes <> fst def
+R1112:1116 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.PerTask.tsk_R var
+var 1129:1135 InterferenceBoundJitter.Definitions.PerTask R_other
+R1140:1142 Coq.Init.Datatypes <> snd def
+R1144:1148 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.PerTask.tsk_R var
+def 1296:1321 InterferenceBoundJitter interference_bound_generic
+R1334:1337 mathcomp.ssreflect.ssrnat <> minn def
+R1432:1434 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'+'_x not
+R1414:1417 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'-'_x not
+R1431:1431 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'-'_x not
+R1409:1413 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.delta var
+R1418:1426 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.task_cost var
+R1428:1430 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.tsk var
+R1340:1347 rt.analysis.jitter.workload_bound WorkloadBoundJitter W_jitter def
+R1401:1405 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.delta var
+R1393:1399 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.PerTask.R_other var
+R1383:1391 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.PerTask.tsk_other var
+R1371:1381 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.task_jitter var
+R1359:1369 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.task_period var
+R1349:1357 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.task_cost var
+R1448:1454 rt.analysis.jitter.interference_bound InterferenceBoundJitter.Definitions.PerTask <> sec
+sec 1470:1477 InterferenceBoundJitter.Definitions AllTasks
+var 1535:1552 InterferenceBoundJitter.Definitions.AllTasks higher_eq_priority
+R1555:1563 rt.model.basic.priority Priority FP_policy def
+R1565:1577 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.sporadic_task var
+var 1591:1612 InterferenceBoundJitter.Definitions.AllTasks can_interfere_with_tsk
+R1617:1637 rt.model.basic.interference Interference fp_can_interfere_with def
+R1658:1660 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.tsk var
+R1639:1656 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.AllTasks.higher_eq_priority var
+def 1803:1829 InterferenceBoundJitter total_interference_bound_fp
+R1842:1848 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1858:1859 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1867:1871 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1878:1880 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1913:1925 rt.util.notation <> :nat_scope:'\sum_'_'('_'('_x_','_x_')'_'<-'_x_'|'_x_')'_x not
+R1872:1877 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.R_prev var
+R1881:1902 rt.analysis.jitter.interference_bound <> InterferenceBoundJitter.Definitions.AllTasks.can_interfere_with_tsk var
+R1926:1951 rt.analysis.jitter.interference_bound InterferenceBoundJitter interference_bound_generic def
+R1953:1953 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1963:1964 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1972:1972 Coq.Init.Datatypes <> :core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1990:1997 rt.analysis.jitter.interference_bound InterferenceBoundJitter.Definitions.AllTasks <> sec
+R2007:2017 rt.analysis.jitter.interference_bound InterferenceBoundJitter.Definitions <> sec
+R2025:2047 rt.analysis.jitter.interference_bound InterferenceBoundJitter <> mod

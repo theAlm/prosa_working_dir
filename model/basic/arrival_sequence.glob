@@ -1,0 +1,295 @@
+DIGEST ae24006fbcd91e1484d11c0bb92abf88
+Frt.model.basic.arrival_sequence
+R15:25 rt.util.all <> <> lib
+R27:44 rt.model.basic.job <> <> lib
+R46:64 rt.model.basic.task <> <> lib
+R66:84 rt.model.basic.time <> <> lib
+R116:124 mathcomp.ssreflect.ssreflect <> <> lib
+R126:132 mathcomp.ssreflect.ssrbool <> <> lib
+R134:139 mathcomp.ssreflect.ssrfun <> <> lib
+R141:146 mathcomp.ssreflect.eqtype <> <> lib
+R148:153 mathcomp.ssreflect.ssrnat <> <> lib
+R155:157 mathcomp.ssreflect.seq <> <> lib
+R159:165 mathcomp.ssreflect.fintype <> <> lib
+R167:171 mathcomp.ssreflect.bigop <> <> lib
+mod 241:255 <> ArrivalSequence
+sec 353:370 ArrivalSequence ArrivalSequenceDef
+var 445:447 ArrivalSequence.ArrivalSequenceDef Job
+R450:455 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+def 555:570 ArrivalSequence arrival_sequence
+R579:582 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R583:585 mathcomp.ssreflect.seq <> seq syndef
+R587:589 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequenceDef.Job var
+R575:578 rt.model.basic.time Time time def
+R599:616 rt.model.basic.arrival_sequence ArrivalSequence.ArrivalSequenceDef <> sec
+sec 812:831 ArrivalSequence JobInArrivalSequence
+R853:858 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+def 945:954 ArrivalSequence arrives_at
+R960:962 rt.model.basic.arrival_sequence <> ArrivalSequence.JobInArrivalSequence.Job var
+R975:990 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R992:994 rt.model.basic.arrival_sequence <> ArrivalSequence.JobInArrivalSequence.Job var
+R1001:1004 rt.model.basic.time Time time def
+R1017:1021 mathcomp.ssreflect.ssrbool <> :bool_scope:x_'\in'_x not
+R1016:1016 rt.model.basic.arrival_sequence <> j var
+R1022:1028 rt.model.basic.arrival_sequence <> arr_seq var
+R1030:1030 rt.model.basic.arrival_sequence <> t var
+rec 1202:1206 ArrivalSequence JobIn
+proj 1262:1268 ArrivalSequence _job_in
+proj 1282:1294 ArrivalSequence _arrival_time
+R1218:1233 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R1235:1237 rt.model.basic.arrival_sequence <> ArrivalSequence.JobInArrivalSequence.Job var
+R1271:1273 rt.model.basic.arrival_sequence <> ArrivalSequence.JobInArrivalSequence.Job var
+R1297:1300 rt.model.basic.time Time time def
+R1331:1340 rt.model.basic.arrival_sequence ArrivalSequence arrives_at def
+R1358:1370 rt.model.basic.arrival_sequence <> _arrival_time meth
+R1350:1356 rt.model.basic.arrival_sequence <> arr_seq var
+R1342:1348 rt.model.basic.arrival_sequence <> _job_in meth
+def 0:-1 ArrivalSequence JobIn_is_Job
+R1506:1521 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R1523:1525 rt.model.basic.arrival_sequence <> ArrivalSequence.JobInArrivalSequence.Job var
+R1532:1536 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R1538:1544 rt.model.basic.arrival_sequence <> arr_seq var
+R1556:1562 rt.model.basic.arrival_sequence ArrivalSequence _job_in proj
+R1572:1572 rt.model.basic.arrival_sequence <> j var
+R1564:1570 rt.model.basic.arrival_sequence <> arr_seq var
+def 1683:1693 ArrivalSequence job_arrival
+R1705:1720 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R1722:1724 rt.model.basic.arrival_sequence <> ArrivalSequence.JobInArrivalSequence.Job var
+R1731:1735 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R1737:1743 rt.model.basic.arrival_sequence <> arr_seq var
+R1755:1767 rt.model.basic.arrival_sequence ArrivalSequence _arrival_time proj
+R1777:1777 rt.model.basic.arrival_sequence <> j var
+R1769:1775 rt.model.basic.arrival_sequence <> arr_seq var
+def 112:122 ArrivalSequence jobin_eqdef
+R134:149 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R151:153 rt.model.basic.arrival_sequence <> ArrivalSequence.JobInArrivalSequence.Job var
+R177:181 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R183:189 rt.model.basic.arrival_sequence <> arr_seq var
+R203:203 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R244:258 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R311:311 Coq.Init.Datatypes <> :bool_scope:x_'&&'_x not
+R222:225 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R204:210 rt.model.basic.arrival_sequence ArrivalSequence _job_in proj
+R220:221 rt.model.basic.arrival_sequence <> j1 var
+R212:218 rt.model.basic.arrival_sequence <> arr_seq var
+R226:232 rt.model.basic.arrival_sequence ArrivalSequence _job_in proj
+R242:243 rt.model.basic.arrival_sequence <> j2 var
+R234:240 rt.model.basic.arrival_sequence <> arr_seq var
+R283:286 mathcomp.ssreflect.eqtype <> :bool_scope:x_'=='_x not
+R259:271 rt.model.basic.arrival_sequence ArrivalSequence _arrival_time proj
+R281:282 rt.model.basic.arrival_sequence <> j1 var
+R273:279 rt.model.basic.arrival_sequence <> arr_seq var
+R287:299 rt.model.basic.arrival_sequence ArrivalSequence _arrival_time proj
+R309:310 rt.model.basic.arrival_sequence <> j2 var
+R301:307 rt.model.basic.arrival_sequence <> arr_seq var
+prf 325:333 ArrivalSequence eqn_jobin
+R353:366 mathcomp.ssreflect.eqtype Equality axiom def
+R369:379 rt.model.basic.arrival_sequence ArrivalSequence jobin_eqdef def
+R381:387 rt.model.basic.arrival_sequence <> arr_seq var
+R415:428 mathcomp.ssreflect.eqtype Equality axiom def
+R467:477 rt.model.basic.arrival_sequence ArrivalSequence jobin_eqdef def
+R467:477 rt.model.basic.arrival_sequence ArrivalSequence jobin_eqdef def
+R522:529 mathcomp.ssreflect.ssrbool <> ReflectT constr
+R522:529 mathcomp.ssreflect.ssrbool <> ReflectT constr
+R547:557 rt.model.basic.arrival_sequence ArrivalSequence jobin_eqdef def
+R586:589 mathcomp.ssreflect.ssrbool <> andP thm
+R593:595 mathcomp.ssreflect.eqtype <> eqP thm
+R604:606 mathcomp.ssreflect.eqtype <> eqP thm
+R674:689 mathcomp.ssreflect.eqtype <> bool_irrelevance thm
+R674:689 mathcomp.ssreflect.eqtype <> bool_irrelevance thm
+R722:729 mathcomp.ssreflect.ssrbool <> ReflectF constr
+R722:729 mathcomp.ssreflect.ssrbool <> ReflectF constr
+R747:757 rt.model.basic.arrival_sequence ArrivalSequence jobin_eqdef def
+R760:762 Coq.Init.Logic <> not def
+R795:799 mathcomp.ssreflect.ssrbool <> negbT thm
+R816:823 mathcomp.ssreflect.ssrbool <> negb_and thm
+R795:799 mathcomp.ssreflect.ssrbool <> negbT thm
+R816:823 mathcomp.ssreflect.ssrbool <> negb_and thm
+R816:823 mathcomp.ssreflect.ssrbool <> negb_and thm
+R876:878 mathcomp.ssreflect.ssrbool <> orP thm
+R882:885 mathcomp.ssreflect.ssrbool <> negP thm
+R898:901 mathcomp.ssreflect.ssrbool <> negP thm
+R969:971 mathcomp.ssreflect.eqtype <> eqP thm
+R969:971 mathcomp.ssreflect.eqtype <> eqP thm
+R1030:1032 mathcomp.ssreflect.eqtype <> eqP thm
+R1030:1032 mathcomp.ssreflect.eqtype <> eqP thm
+def 0:-1 ArrivalSequence jobin_eqMixin
+R1088:1094 mathcomp.ssreflect.eqtype Equality.Exports EqMixin syndef
+R1097:1105 rt.model.basic.arrival_sequence ArrivalSequence eqn_jobin thm
+R1107:1113 rt.model.basic.arrival_sequence <> arr_seq var
+def 0:-1 ArrivalSequence jobin_eqType
+R1163:1168 mathcomp.ssreflect.eqtype Equality.Exports EqType syndef
+R1171:1175 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R1177:1183 rt.model.basic.arrival_sequence <> arr_seq var
+R1187:1199 rt.model.basic.arrival_sequence ArrivalSequence jobin_eqMixin canonstruc
+R1201:1207 rt.model.basic.arrival_sequence <> arr_seq var
+R1945:1964 rt.model.basic.arrival_sequence ArrivalSequence.JobInArrivalSequence <> sec
+sec 2041:2065 ArrivalSequence ArrivalSequenceProperties
+R2087:2092 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 2109:2115 ArrivalSequence.ArrivalSequenceProperties arr_seq
+R2118:2133 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R2135:2137 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequenceProperties.Job var
+def 2223:2242 ArrivalSequence no_multiple_arrivals
+R2264:2266 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequenceProperties.Job var
+R2307:2310 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2334:2337 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2340:2342 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2338:2339 rt.model.basic.arrival_sequence <> t1 var
+R2343:2344 rt.model.basic.arrival_sequence <> t2 var
+R2311:2320 rt.model.basic.arrival_sequence ArrivalSequence arrives_at def
+R2332:2333 rt.model.basic.arrival_sequence <> t2 var
+R2324:2330 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequenceProperties.arr_seq var
+R2322:2322 rt.model.basic.arrival_sequence <> j var
+R2284:2293 rt.model.basic.arrival_sequence ArrivalSequence arrives_at def
+R2305:2306 rt.model.basic.arrival_sequence <> t1 var
+R2297:2303 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequenceProperties.arr_seq var
+R2295:2295 rt.model.basic.arrival_sequence <> j var
+def 2438:2462 ArrivalSequence arrival_sequence_is_a_set
+R2477:2480 mathcomp.ssreflect.seq <> uniq def
+R2483:2489 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequenceProperties.arr_seq var
+R2491:2491 rt.model.basic.arrival_sequence <> t var
+R2502:2526 rt.model.basic.arrival_sequence ArrivalSequence.ArrivalSequenceProperties <> sec
+sec 2606:2617 ArrivalSequence ArrivingJobs
+R2639:2644 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R2670:2685 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R2687:2689 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivingJobs.Job var
+var 2706:2706 ArrivalSequence.ArrivingJobs j
+R2709:2713 rt.model.basic.arrival_sequence ArrivalSequence JobIn rec
+R2715:2721 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivingJobs.arr_seq var
+def 2831:2841 ArrivalSequence has_arrived
+R2847:2850 rt.model.basic.time Time time def
+R2869:2872 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x not
+R2856:2866 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R2868:2868 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivingJobs.j var
+R2873:2873 rt.model.basic.arrival_sequence <> t var
+def 2977:2990 ArrivalSequence arrived_before
+R2996:2999 rt.model.basic.time Time time def
+R3018:3020 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<'_x not
+R3005:3015 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R3017:3017 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivingJobs.j var
+R3021:3021 rt.model.basic.arrival_sequence <> t var
+def 3131:3145 ArrivalSequence arrived_between
+R3155:3158 rt.model.basic.time Time time def
+R3166:3169 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x_'<'_x not
+R3183:3185 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'<='_x_'<'_x not
+R3164:3165 rt.model.basic.arrival_sequence <> t1 var
+R3170:3180 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R3182:3182 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivingJobs.j var
+R3170:3180 rt.model.basic.arrival_sequence ArrivalSequence job_arrival def
+R3182:3182 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivingJobs.j var
+R3186:3187 rt.model.basic.arrival_sequence <> t2 var
+R3197:3208 rt.model.basic.arrival_sequence ArrivalSequence.ArrivingJobs <> sec
+sec 3439:3459 ArrivalSequence ArrivalSequencePrefix
+R3481:3486 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+var 3503:3509 ArrivalSequence.ArrivalSequencePrefix arr_seq
+R3512:3527 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence def
+R3529:3531 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequencePrefix.Job var
+def 3693:3700 ArrivalSequence is_JobIn
+R3706:3709 rt.model.basic.time Time time def
+R3716:3718 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequencePrefix.Job var
+R3735:3739 mathcomp.ssreflect.ssrbool <> :bool_scope:x_'\in'_x not
+R3734:3734 rt.model.basic.arrival_sequence <> j var
+R3740:3746 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequencePrefix.arr_seq var
+R3748:3748 rt.model.basic.arrival_sequence <> t var
+R3754:3757 Coq.Init.Datatypes <> true constr
+R3772:3775 Coq.Init.Datatypes <> Some constr
+R3778:3788 rt.model.basic.arrival_sequence ArrivalSequence Build_JobIn constr
+R3800:3800 rt.model.basic.arrival_sequence <> t var
+R3798:3798 rt.model.basic.arrival_sequence <> j var
+R3790:3796 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequencePrefix.arr_seq var
+R3816:3819 Coq.Init.Datatypes <> None constr
+def 3942:3957 ArrivalSequence jobs_arriving_at
+R3963:3966 rt.model.basic.time Time time def
+R3972:3975 mathcomp.ssreflect.seq <> pmap def
+R3991:3997 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequencePrefix.arr_seq var
+R3999:3999 rt.model.basic.arrival_sequence <> t var
+R3978:3985 rt.model.basic.arrival_sequence ArrivalSequence is_JobIn def
+R3987:3987 rt.model.basic.arrival_sequence <> t var
+def 4104:4121 ArrivalSequence jobs_arrived_up_to
+R4128:4131 rt.model.basic.time Time time def
+R4143:4148 rt.util.notation <> :nat_scope:'\cat_'_'('_x_'<'_x_')'_x not
+R4150:4152 rt.util.notation <> :nat_scope:'\cat_'_'('_x_'<'_x_')'_x not
+R4158:4159 rt.util.notation <> :nat_scope:'\cat_'_'('_x_'<'_x_')'_x not
+R4160:4175 rt.model.basic.arrival_sequence ArrivalSequence jobs_arriving_at def
+R4155:4157 mathcomp.ssreflect.ssrnat <> :nat_scope:x_'.+1' not
+R4153:4154 rt.model.basic.arrival_sequence <> t' var
+sec 4193:4198 ArrivalSequence.ArrivalSequencePrefix Lemmas
+prf 4304:4319 ArrivalSequence is_JobIn_inverse
+R4351:4357 mathcomp.ssreflect.ssrfun <> ocancel def
+R4373:4379 rt.model.basic.arrival_sequence ArrivalSequence _job_in proj
+R4381:4387 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequencePrefix.arr_seq var
+R4360:4367 rt.model.basic.arrival_sequence ArrivalSequence is_JobIn def
+R4369:4369 rt.model.basic.arrival_sequence <> t var
+R4447:4454 rt.model.basic.arrival_sequence ArrivalSequence is_JobIn def
+prf 4568:4584 ArrivalSequence JobIn_has_arrived
+R4644:4648 Coq.Init.Logic <> :type_scope:x_'<->'_x not
+R4619:4623 mathcomp.ssreflect.ssrbool <> :bool_scope:x_'\in'_x not
+R4618:4618 rt.model.basic.arrival_sequence <> j var
+R4624:4641 rt.model.basic.arrival_sequence ArrivalSequence jobs_arrived_up_to def
+R4643:4643 rt.model.basic.arrival_sequence <> t var
+R4649:4659 rt.model.basic.arrival_sequence ArrivalSequence has_arrived def
+R4663:4663 rt.model.basic.arrival_sequence <> t var
+R4661:4661 rt.model.basic.arrival_sequence <> j var
+R4743:4763 rt.util.bigcat <> mem_bigcat_ord_exists thm
+R4743:4763 rt.util.bigcat <> mem_bigcat_ord_exists thm
+R4813:4828 rt.model.basic.arrival_sequence ArrivalSequence jobs_arriving_at def
+R4855:4862 mathcomp.ssreflect.seq <> mem_pmap thm
+R4855:4862 mathcomp.ssreflect.seq <> mem_pmap thm
+R4855:4862 mathcomp.ssreflect.seq <> mem_pmap thm
+R4894:4897 mathcomp.ssreflect.seq <> mapP thm
+R4930:4937 rt.model.basic.arrival_sequence ArrivalSequence is_JobIn def
+R5034:5044 rt.model.basic.arrival_sequence ArrivalSequence has_arrived def
+R5076:5079 mathcomp.ssreflect.ssrnat <> ltnS thm
+R5088:5094 mathcomp.ssreflect.fintype <> ltn_ord thm
+R5076:5079 mathcomp.ssreflect.ssrnat <> ltnS thm
+R5076:5079 mathcomp.ssreflect.ssrnat <> ltnS thm
+R5088:5094 mathcomp.ssreflect.fintype <> ltn_ord thm
+R5134:5144 rt.model.basic.arrival_sequence ArrivalSequence has_arrived def
+R5182:5185 mathcomp.ssreflect.ssrnat <> ltnS thm
+R5182:5185 mathcomp.ssreflect.ssrnat <> ltnS thm
+R5182:5185 mathcomp.ssreflect.ssrnat <> ltnS thm
+R5241:5247 mathcomp.ssreflect.fintype <> Ordinal constr
+R5215:5228 rt.util.bigcat <> mem_bigcat_ord thm
+R5241:5247 mathcomp.ssreflect.fintype <> Ordinal constr
+R5215:5228 rt.util.bigcat <> mem_bigcat_ord thm
+R5292:5299 mathcomp.ssreflect.seq <> mem_pmap thm
+R5308:5311 mathcomp.ssreflect.seq <> mapP thm
+R5292:5299 mathcomp.ssreflect.seq <> mem_pmap thm
+R5292:5299 mathcomp.ssreflect.seq <> mem_pmap thm
+R5308:5311 mathcomp.ssreflect.seq <> mapP thm
+R5430:5437 rt.model.basic.arrival_sequence ArrivalSequence is_JobIn def
+R5483:5498 mathcomp.ssreflect.eqtype <> bool_irrelevance thm
+R5483:5498 mathcomp.ssreflect.eqtype <> bool_irrelevance thm
+R5533:5542 rt.model.basic.arrival_sequence ArrivalSequence arrives_at def
+prf 5726:5735 ArrivalSequence JobIn_uniq
+R5780:5791 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R5802:5805 mathcomp.ssreflect.seq <> uniq def
+R5808:5825 rt.model.basic.arrival_sequence ArrivalSequence jobs_arrived_up_to def
+R5827:5827 rt.model.basic.arrival_sequence <> t var
+R5747:5771 rt.model.basic.arrival_sequence ArrivalSequence arrival_sequence_is_a_set def
+R5773:5779 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequencePrefix.arr_seq var
+R5859:5876 rt.model.basic.arrival_sequence ArrivalSequence jobs_arrived_up_to def
+R5907:5921 rt.util.bigcat <> bigcat_ord_uniq thm
+R5907:5921 rt.util.bigcat <> bigcat_ord_uniq thm
+R5961:5976 rt.model.basic.arrival_sequence ArrivalSequence jobs_arriving_at def
+R6017:6023 rt.model.basic.arrival_sequence ArrivalSequence _job_in proj
+R6025:6031 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequencePrefix.arr_seq var
+R5995:6003 mathcomp.ssreflect.seq <> pmap_uniq thm
+R6051:6066 rt.model.basic.arrival_sequence ArrivalSequence is_JobIn_inverse thm
+R6017:6023 rt.model.basic.arrival_sequence ArrivalSequence _job_in proj
+R6025:6031 rt.model.basic.arrival_sequence <> ArrivalSequence.ArrivalSequencePrefix.arr_seq var
+R5995:6003 mathcomp.ssreflect.seq <> pmap_uniq thm
+R6051:6066 rt.model.basic.arrival_sequence ArrivalSequence is_JobIn_inverse thm
+R6167:6174 mathcomp.ssreflect.seq <> mem_pmap thm
+R6167:6174 mathcomp.ssreflect.seq <> mem_pmap thm
+R6167:6174 mathcomp.ssreflect.seq <> mem_pmap thm
+R6167:6174 mathcomp.ssreflect.seq <> mem_pmap thm
+R6216:6219 mathcomp.ssreflect.seq <> mapP thm
+R6226:6229 mathcomp.ssreflect.seq <> mapP thm
+R6318:6325 rt.model.basic.arrival_sequence ArrivalSequence is_JobIn def
+R6380:6387 rt.model.basic.arrival_sequence ArrivalSequence is_JobIn def
+R6485:6491 mathcomp.ssreflect.fintype <> ord_inj thm
+R6485:6491 mathcomp.ssreflect.fintype <> ord_inj thm
+R6530:6535 rt.model.basic.arrival_sequence ArrivalSequence.ArrivalSequencePrefix.Lemmas <> sec
+R6549:6569 rt.model.basic.arrival_sequence ArrivalSequence.ArrivalSequencePrefix <> sec
+R6577:6591 rt.model.basic.arrival_sequence ArrivalSequence <> mod

@@ -1,0 +1,53 @@
+DIGEST 20169ccabba9753593b280f6f6e86f9c
+Frt.util.powerset
+R15:29 rt.util.tactics <> <> lib
+R61:69 mathcomp.ssreflect.ssreflect <> <> lib
+R71:77 mathcomp.ssreflect.ssrbool <> <> lib
+R79:84 mathcomp.ssreflect.eqtype <> <> lib
+R86:91 mathcomp.ssreflect.ssrnat <> <> lib
+R93:95 mathcomp.ssreflect.seq <> <> lib
+R97:103 mathcomp.ssreflect.fintype <> <> lib
+R105:109 mathcomp.ssreflect.bigop <> <> lib
+R111:115 mathcomp.ssreflect.tuple <> <> lib
+sec 127:134 <> PowerSet
+def 241:248 <> powerset
+R254:259 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R266:268 mathcomp.ssreflect.seq <> seq syndef
+R270:270 rt.util.powerset <> T var
+R275:277 mathcomp.ssreflect.seq <> seq syndef
+R280:282 mathcomp.ssreflect.seq <> seq syndef
+R284:284 rt.util.powerset <> T var
+R305:305 mathcomp.ssreflect.tuple <> :type_scope:x_'.-tuple' not
+R312:319 mathcomp.ssreflect.tuple <> :type_scope:x_'.-tuple' not
+R306:309 mathcomp.ssreflect.seq <> size def
+R311:311 rt.util.powerset <> l var
+R321:324 Coq.Init.Datatypes <> bool ind
+R337:339 mathcomp.ssreflect.seq <> map def
+R369:372 mathcomp.ssreflect.fintype <> enum syndef
+R374:376 mathcomp.ssreflect.ssrbool <> :type_scope:'{'_':'_x_'}' not
+R379:379 mathcomp.ssreflect.ssrbool <> :type_scope:'{'_':'_x_'}' not
+R377:378 rt.util.powerset <> mT var
+R350:351 rt.util.powerset <> mT var
+R357:360 mathcomp.ssreflect.seq <> mask def
+R364:364 rt.util.powerset <> l var
+R362:362 rt.util.powerset <> m var
+prf 393:404 <> mem_powerset
+R410:415 mathcomp.ssreflect.eqtype Equality.Exports eqType syndef
+R422:424 mathcomp.ssreflect.seq <> seq syndef
+R426:426 rt.util.powerset <> T var
+R455:458 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R459:466 mathcomp.ssreflect.ssrbool <> :type_scope:'{'_'subset'_x_'<='_x_'}' not
+R468:471 mathcomp.ssreflect.ssrbool <> :type_scope:'{'_'subset'_x_'<='_x_'}' not
+R473:473 mathcomp.ssreflect.ssrbool <> :type_scope:'{'_'subset'_x_'<='_x_'}' not
+R467:467 rt.util.powerset <> y var
+R472:472 rt.util.powerset <> x var
+R438:443 mathcomp.ssreflect.ssrbool <> :bool_scope:x_'\in'_x not
+R454:454 mathcomp.ssreflect.ssrbool <> :bool_scope:x_'\in'_x not
+R437:437 rt.util.powerset <> y var
+R444:451 rt.util.powerset <> powerset def
+R453:453 rt.util.powerset <> x var
+R536:543 rt.util.powerset <> powerset def
+R571:574 mathcomp.ssreflect.seq <> mapP thm
+R632:639 mathcomp.ssreflect.seq <> mem_mask thm
+R632:639 mathcomp.ssreflect.seq <> mem_mask thm
+R671:678 rt.util.powerset PowerSet <> sec
