@@ -1,6 +1,76 @@
-E3Ñ8áRN¬­êh²+h¯'(žÖ¢žËazf¢œ**¦º(~Ê^ršè¡÷^½éh¦g§¶‡í…äS=Ž*k¢7œ´ùZœZ+žŒ-†+"²j+zŠåzË#ºËZr‡^vé©Â+aiùZ¶ž­ªÜ‡+hëm†)à²ËZ®×ˆ§ú+ÁªÝ¶ ¡©b²Ú¢ØkzËk¹Ën­ëaz·©¢È­¢¼š²+`®Œ,Š{¢—šÛhi×lŠ	â~'ž×hréžžÖ­Š‰í¢f¤z+^jÈž®Ú®)àì¢YZnŠÚ¶ŠìÂ­éè·'­}©¢–&«Â+a
-Š¢žÚ-…êk¢7œ´ë‰çâžÚèvç-Š‰ß¢»azšè}ë,¢··Ÿ¢éÝ…êÞ‚+`ŠÙZmË!²¹y©fzº-‡÷(ªšÚzÇ§µ«b¢x"´*&š+ZÐÞ½éh¦g§µ¥zÍ@—²±ú%–Œ-…êk¢7œµÊŠxÜ+ŠØ§‚¢uébë¡Ïàº'^–)Þ²gS†+"²lDä€ZŠäŠxŠ±h®–«¶'"¥«bžay×¯zZ)™éí¦Wš±çè–Z0¶¬ÂŠä~Z0Â+a¢ëm…è"·
-+•ùhÁìmz{"¢xm¶›?ÿ0jÙZ²ÈšÊ&þ­þÛ­¢¸š–ÏÜ¢jZ®)àÂŠä~Z0³ø"µùhÃ
-+‘ùhÁ: zÛa{
-+’)àz{â®‰žž×è–Z0¶¬z)ì¶»œ¶*'²m¦Ïÿ¦º,jjb³(®ëzWš±ë?¿Mj»b}§-üÚÚ'
-â²Ü°®‹^iº.¶Ø^N¨­é®‹Þ®Øb²­‚+ei·,†ÊæuæÜ†¸´ÓŸÚªæ¬‚+V9…,å‘P±N¬yªÞ¶š–Z0yÖëjw!zÉš²×«ëÞ–ŠEy«n­ë¢×âÅëjË^®k¬µ·«ºyâž§—$Úž6€–g«¢Øfk*n²h™«-z¹š²×«ëÞ–ŠEy«n­à¢×âÄWš¶êÞc‘ë.­ëazf¬µêÛ­©Ü…Ê&¦)^±«^iÈ\¢i¢µ8b²+'¢Ûk¹çè®Ø^yªåÊ¬¶Šò¡ûaz·©¢È­¢¼›ºØ(Šx¢¼­Ü².•Û-®+Þ¶‰z˜­ÂŠäŠxµ©e¶)ž³r-²‰-¡×¯zZ)Šv©®+Úµçb®Ü›­©Ü…»­¶§rWšžêZØ"¶·›jÇ¢¢{h¦‡í…ç.®·§¶f¬µêÛyú+zg«‚)àÊ‹«ÂŠäŠ{h™«-z¾¶Ë¬¹©eÉ¨(¡Øy«hjÉŠ»-¢{azf¢–)à–+-mçè­éž®§«.nËZžØš•ÈZž¹>ë!Šx‹¬²f¥–)©®‹Þ™éí±ë\ŠÆ¥Á¬¬¢Nƒ¡Ë¦z{m…ëZrØœ²ØZ·*.ºÇ¢žØ^–+-¡ûZrØœ±ÚþÖœ¶',™
+# RT-PROOFS
+
+This repository contains the main Coq proof spec & proof development of the RT-PROOFS project.
+
+
+## Plan
+
+For now, this is more or less just a "code dump" with a flat hierarchy to get things started.
+
+Going forward, the goal is to both
+
+- restructure the repository as it grows in scope, and to
+
+- add significant documentation to make it easier to bring new collaborators who are not yet familiar with Coq into the project.
+ 
+
+A brief introduction for the professor can be found here
+
+    git@gitlab.cs.hs-rm.de:almeroth/coq_praesentation.git
+
+
+## Commit and Development Rules
+
+1. Always follow the project [coding and writing guidelines](doc/guidelines.md).
+    This is my PROSA_ Working Dir
+    For participating the development please follow this workflow without the git worlflow extension:
+ 
+     https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow 
+
+    To get the working enviroment follow these instructions:
+ 
+    https://prosa.mpi-sws.org/releases/v0.1/artifact/ 
+    
+    Brandon Christy wrote about the Theorem Prover this:
+    
+    git@gitlab.cs.hs-rm.de:bchri005/aquas.git
+    
+
+    WORKFLOW RULES:
+
+    These are the allowed branches:
+        master
+        Develop
+        Features
+        Hotfixes
+        
+        Master must be running.
+        Only Tanja Almeroth may push to master.
+        
+        master ----------------------------------------
+                  \       \
+                   \       \
+                    \       \
+        Develop ---------------------------------
+                    \         \      
+                     \         \      
+                      \         \        
+                       \         \     
+        Feature A       \         --------------
+                         \            
+                          \  
+        Hotfix             --------------------
+
+
+
+        Feature B          ------------------
+
+2. Make sure the master branch "compiles" at each commit. This is not true for the early history of the repository, but going forward we should strive to keep it working at all times. 
+
+3. It's ok to develop in a (private) dirty branch, but then clean up and `git-rebase -i` on top of the current master before merging your work into master.
+
+4. It's usually a good idea to ask first on the mailing list before merging a substantial change.
+
+5. Pushing fixes, small improvements, etc. is always ok. 
+
+6. Document the tactics that you use in the [list of tactics](doc/tactics.md).
