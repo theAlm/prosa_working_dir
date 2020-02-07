@@ -30,6 +30,11 @@ A brief introduction for the professor can be found here
     To get the working enviroment follow these instructions:
  
     https://prosa.mpi-sws.org/releases/v0.1/artifact/ 
+    
+    Brandon Christy wrote about the Theorem Prover this:
+    
+    git@gitlab.cs.hs-rm.de:bchri005/aquas.git
+    
 
     WORKFLOW RULES:
 
