@@ -14,28 +14,32 @@ Going forward, the goal is to both
 - add significant documentation to make it easier to bring new collaborators who are not yet familiar with Coq into the project.
  
 
-A brief introduction for the professor can be found here
+A brief introduction for the professor can be found here:
 
-    git@gitlab.cs.hs-rm.de:almeroth/coq_praesentation.git
+    [git@gitlab.cs.hs-rm.de:almeroth/coq_praesentation.git](url)
+    
+
+Brandon Christy wrote the following about the Coq theorem prover:
+    
+     [git@gitlab.cs.hs-rm.de:bchri005/aquas.git](url)
+
 
 
 ## Commit and Development Rules
 
 1. Always follow the project [coding and writing guidelines](doc/guidelines.md).
-    This is my PROSA_ Working Dir
-    For participating the development please follow this workflow without the git worlflow extension:
- 
-     https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow 
 
-    To get the working enviroment follow these instructions:
+   This is Tanja Almeroth PROSA_ Working Dir
+   For participating the development please follow this workflow without the git worlflow extension:
  
-    https://prosa.mpi-sws.org/releases/v0.1/artifact/ 
-    
-    Brandon Christy wrote about the Theorem Prover this:
-    
-    git@gitlab.cs.hs-rm.de:bchri005/aquas.git
-    
+     [Centralized Workflow as provided by Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) 
 
+    To get the working enviroment follow these instructions my the MPI. The provided [VM-image] is recommended.
+ 
+    [Installing the Proof Frame Work , VM-image](https://prosa.mpi-sws.org/releases/v0.1/artifact/)
+    
+    (The VM provides Proof General IDE Version 4.3pre131011 and a installation of PROSA )
+ 
     WORKFLOW RULES:
 
     These are the allowed branches:
