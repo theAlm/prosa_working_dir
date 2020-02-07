@@ -12,6 +12,11 @@ Going forward, the goal is to both
 - restructure the repository as it grows in scope, and to
 
 - add significant documentation to make it easier to bring new collaborators who are not yet familiar with Coq into the project.
+ 
+
+A brief introduction for the professor can be found here
+
+    git@gitlab.cs.hs-rm.de:almeroth/coq_praesentation.git
 
 
 ## Commit and Development Rules
@@ -20,11 +25,11 @@ Going forward, the goal is to both
     This is my PROSA_ Working Dir
     For participating the development please follow this workflow without the git worlflow extension:
  
-    [ https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow ]
+     https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow 
 
     To get the working enviroment follow these instructions:
  
-    [ https://prosa.mpi-sws.org/releases/v0.1/artifact/ ]
+    https://prosa.mpi-sws.org/releases/v0.1/artifact/ 
 
     WORKFLOW RULES:
 
