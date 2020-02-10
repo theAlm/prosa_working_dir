@@ -34,7 +34,7 @@ Brandon Christy wrote the following about the Coq theorem prover:
  
      [Centralized Workflow as provided by Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) 
 
-    To get the working enviroment follow these instructions my the MPI. The provided [VM-image] is recommended.
+    To get the working enviroment follow these instructions my the MPI. The provided [VM-image](https://prosa.mpi-sws.org/releases/v0.1/vm/prosa.qcow.gz) is recommended.
  
     [Installing the Proof Frame Work , VM-image](https://prosa.mpi-sws.org/releases/v0.1/artifact/)
     
