@@ -17,6 +17,43 @@ Going forward, the goal is to both
 ## Commit and Development Rules
 
 1. Always follow the project [coding and writing guidelines](doc/guidelines.md).
+    This is my PROSA_ Working Dir
+    For participating the development please follow this workflow without the git worlflow extension:
+ 
+    [ https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow ]
+
+    To get the working enviroment follow these instructions:
+ 
+    [ https://prosa.mpi-sws.org/releases/v0.1/artifact/ ]
+
+    WORKFLOW RULES:
+
+    These are the allowed branches:
+        master
+        Develop
+        Features
+        Hotfixes
+        
+        Master must be running.
+        Only Tanja Almeroth may push to master.
+        
+        master ----------------------------------------
+                  \       \
+                   \       \
+                    \       \
+        Develop ---------------------------------
+                    \         \      
+                     \         \      
+                      \         \        
+                       \         \     
+        Feature A       \         --------------
+                         \            
+                          \  
+        Hotfix             --------------------
+
+
+
+        Feature B          ------------------
 
 2. Make sure the master branch "compiles" at each commit. This is not true for the early history of the repository, but going forward we should strive to keep it working at all times. 
 
