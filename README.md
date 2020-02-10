@@ -87,5 +87,5 @@ Live is shor the RT-Proofs repository code is long.
 
 A four-days- full-time course including programing exercise with everything provided online can be found here:
 
-[INIRIA Coq Winter School 2018-2019 (SSReflect & MathComp) /](https://team.inria.fr/marelle/en/coq-winter-school-2018-2019-ssreflect-mathcomp/)
+[INIRIA Coq Winter School 2018-2019 (SSReflect & MathComp) ](https://team.inria.fr/marelle/en/coq-winter-school-2018-2019-ssreflect-mathcomp/)
 
