@@ -78,3 +78,14 @@ Brandon Christy wrote the following about the Coq theorem prover:
 5. Pushing fixes, small improvements, etc. is always ok. 
 
 6. Document the tactics that you use in the [list of tactics](doc/tactics.md).
+
+
+## How to start coding
+
+There is a lot of books, introductions and documentaion about Coq, the SSREFLECT libraray and the Mathematical Components extension.
+Live is shor the RT-Proofs repository code is long.
+
+A four-days- full-time course including programing exercise with everything provided online can be found here:
+
+[INIRIA Coq Winter School 2018-2019 (SSReflect & MathComp) /](https://team.inria.fr/marelle/en/coq-winter-school-2018-2019-ssreflect-mathcomp/)
+
