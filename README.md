@@ -1,3 +1,9 @@
+# PROSA_WORKING_DIR
+
+This is Tanja Almeroths PROSA_ Working directory. This repository contains 
+a complete clone of the RT-PROOFS repository.
+
+
 # RT-PROOFS
 
 This repository contains the main Coq proof spec & proof development of the RT-PROOFS project.
@@ -12,24 +18,34 @@ Going forward, the goal is to both
 - restructure the repository as it grows in scope, and to
 
 - add significant documentation to make it easier to bring new collaborators who are not yet familiar with Coq into the project.
+
  
+## About
 
-A brief introduction for the professor can be found here:
+A brief presentation about the project "Introduction To Coq" for the professor 
+can be found here: [git@gitlab.cs.hs-rm.de:almeroth/coq_praesentation.git](https://gitlab.cs.hs-rm.de/almeroth/coq_praesentation.git)
 
-    [git@gitlab.cs.hs-rm.de:almeroth/coq_praesentation.git](url)
-    
+Brandon Christy wrote some summary about the Coq theorem prover, which is 
+advaidable here [git@gitlab.cs.hs-rm.de:bchri005/aquas.git](https://gitlab.cs.hs-rm.de/bchri005/aquas.git).
 
-Brandon Christy wrote the following about the Coq theorem prover:
-    
-     [git@gitlab.cs.hs-rm.de:bchri005/aquas.git](url)
+Lecture notes are provided here [git@gitlab.cs.hs-rm.de:almeroth/softwarefoundations.git](https://gitlab.cs.hs-rm.de/almeroth/softwarefoundations)
 
+
+## How to start coding
+
+There is a lot of books, introductions and documentaion about Coq, the SSREFLECT libraray and the Mathematical Components extension.
+Live is short the RT-Proofs repository code is long.
+
+A four-days- full-time course including programing exercise with everything provided online can be found here:
+
+[INIRIA Coq Winter School 2018-2019 (SSReflect & MathComp) ](https://team.inria.fr/marelle/en/coq-winter-school-2018-2019-ssreflect-mathcomp/)
 
 
 ## Commit and Development Rules
 
 1. Always follow the project [coding and writing guidelines](doc/guidelines.md).
 
-   This is Tanja Almeroth PROSA_ Working Dir
+   This is Tanja Almeroths PROSA_ Working Dir.
    For participating the development please follow this workflow without the git worlflow extension:
  
      [Centralized Workflow as provided by Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) 
@@ -80,12 +96,4 @@ Brandon Christy wrote the following about the Coq theorem prover:
 6. Document the tactics that you use in the [list of tactics](doc/tactics.md).
 
 
-## How to start coding
-
-There is a lot of books, introductions and documentaion about Coq, the SSREFLECT libraray and the Mathematical Components extension.
-Live is shor the RT-Proofs repository code is long.
-
-A four-days- full-time course including programing exercise with everything provided online can be found here:
-
-[INIRIA Coq Winter School 2018-2019 (SSReflect & MathComp) ](https://team.inria.fr/marelle/en/coq-winter-school-2018-2019-ssreflect-mathcomp/)
 
