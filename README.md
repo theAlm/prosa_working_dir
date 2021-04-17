@@ -22,13 +22,15 @@ Going forward, the goal is to both
  
 ## About
 
+git@github.com:theAlm/solutions-of-logical-foundations.git
+
 A brief presentation about the project "Introduction To Coq" for the professor 
-can be found here: [git@gitlab.cs.hs-rm.de:almeroth/coq_praesentation.git](https://gitlab.cs.hs-rm.de/almeroth/coq_praesentation.git)
+can be found here: [git@github.com:theAlm/coq_praesentation.git](https://git@github.com:theAlm/coq_praesentation.git)
 
 Brandon Christy wrote some summary about the Coq theorem prover, which is 
 advaidable here [git@gitlab.cs.hs-rm.de:bchri005/aquas.git](https://gitlab.cs.hs-rm.de/bchri005/aquas.git).
 
-Lecture notes are provided here [git@gitlab.cs.hs-rm.de:almeroth/softwarefoundations.git](https://gitlab.cs.hs-rm.de/almeroth/softwarefoundations)
+Lecture notes are provided here [git@github.com:theAlm/softwarefoundations.git](https://gitlab.cs.hs-rm.de/almeroth/softwarefoundations)
 
 
 ## How to start coding
